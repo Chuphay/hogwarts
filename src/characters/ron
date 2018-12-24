@@ -3,4 +3,7 @@ echo `whoami`
 echo `groups`
 echo $0
 echo ${0##*/}
-python ron.py
+ron.sh
+cd /root
+ls
+pwd
