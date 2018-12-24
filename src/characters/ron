@@ -1,0 +1,6 @@
+#!/bin/bash
+echo `whoami`
+echo `groups`
+echo $0
+echo ${0##*/}
+python ron.py

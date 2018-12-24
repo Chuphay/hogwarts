@@ -14,3 +14,9 @@ usermod -a -G teachers dumbledore
 cd /magical_world
 mkdir forbidden_forest hagrids_hut hogsmeade lake train_station
 chown -R dumbledore:teachers /magical_world
+groupadd demo 
+groupadd level1 
+#level2
+usermod -a -G demo dumbledore 
+#for 
+usermod -a -G level1 dumbledore
