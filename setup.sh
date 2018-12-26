@@ -30,6 +30,7 @@ usermod -a -G level1 dumbledore
 echo $directory
 
 #Here we setup all the characters in the world
+rm -rf /usr/local/bin/hogwarts
 mkdir /usr/local/bin/hogwarts
 chmod 0755 /usr/local/bin/hogwarts
 
@@ -41,6 +42,7 @@ ln -s /usr/local/bin/hogwarts/ron /magical_world/ron
 cp $directory/src/powerspells/hogwarts_permissions /etc/sudoers.d/
 chmod 0440 /etc/sudoers.d/hogwarts_permissions
 
+rm -rf /usr/local/bin/.hogwarts
 mkdir /usr/local/bin/.hogwarts
 chmod 0700 /usr/local/bin/.hogwarts
 
