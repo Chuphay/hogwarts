@@ -11,19 +11,27 @@ directory=`pwd`
 rm -rf /magical_world
 mkdir /magical_world
 mkdir /magical_world/hogwarts
-userdel dumbledore
-useradd -m -d /magical_world/hogwarts/headmasters_office -s /bin/bash dumbledore
-echo dumbledore:"$secret_password" | chpasswd
-touch /magical_world/hogwarts/headmasters_office/.bashrc
-echo 'PATH=$PATH:/usr/local/bin/hogwarts' >> /magical_world/hogwarts/headmasters_office/.bashrc
 
-delgroup teachers
+userdel demo
+useradd -m -d /magical_world/hogwarts/headmasters_office -s /bin/bash demo
+secret_demo_pass="secret"
+echo demo:"$secret_demo_pass" | chpasswd
+echo 'PATH=$PATH:/usr/local/bin/hogwarts' >> /magical_world/hogwarts/headmasters_office/.bashrc
+echo 'cd /magical_world/hogwarts' >> /magical_world/hogwarts/headmasters_office/.bashrc
+
+userdel dumbledore
+useradd -d /magical_world/hogwarts/headmasters_office -s /bin/bash dumbledore
+echo dumbledore:"$secret_password" | chpasswd
+
+#delgroup demo
+delgroup archmage
 groupadd archmage
 usermod -a -G archmage dumbledore
 cd /magical_world
 mkdir forbidden_forest hagrids_hut hogsmeade lake train_station hogwarts/dorms
-groupadd demo 
-groupadd level1 
+#groupadd demo 
+delgroup level1_0
+groupadd level1_0 
 
 # usermod -a -G level1 dumbledore
 # echo $directory
