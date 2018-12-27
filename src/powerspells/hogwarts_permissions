@@ -1,1 +1,2 @@
+ALL ALL = (root) NOPASSWD: /usr/local/bin/.hogwarts/join.sh
 ALL ALL = (root) NOPASSWD: /usr/local/bin/.hogwarts/demo.sh

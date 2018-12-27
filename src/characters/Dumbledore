@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Congratulations, you have successfully navigated around the castle!"
+echo "Do you wish to join Hogwarts"
+read -p "(yes/no) " join
+
+if [ $join = "yes" ]
+then
+    sudo /usr/local/bin/.hogwarts/join.sh
+else
+    echo "Oh well..."
+fi
+
+
