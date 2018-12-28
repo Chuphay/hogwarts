@@ -20,8 +20,8 @@ echo 'PATH=$PATH:/usr/local/bin/hogwarts' >> /magical_world/hogwarts/headmasters
 echo 'cd /magical_world/hogwarts' >> /magical_world/hogwarts/headmasters_office/.bashrc
 
 userdel dumbledore
-useradd -d /magical_world/hogwarts/headmasters_office -s /bin/bash dumbledore
-echo dumbledore:"$secret_password" | chpasswd
+useradd -r dumbledore
+#echo dumbledore:"$secret_password" | chpasswd
 
 #delgroup demo
 delgroup archmage
