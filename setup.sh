@@ -5,36 +5,39 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-secret_password="CHANGE THIS"
 
 directory=`pwd`
 rm -rf /magical_world
-mkdir /magical_world
-mkdir /magical_world/hogwarts
+rm -rf /hogwarts1
+mkdir /hogwarts1
+mkdir /hogwarts1/hogwarts_castle
+
+rm -rf /etc/hogwarts
+mkdir /etc/hogwarts
+chmod 0700 /etc/hogwarts
 
 userdel demo
-useradd -m -d /magical_world/hogwarts/headmasters_office -s /bin/bash demo
+useradd -m -d /hogwarts1/hogwarts_castle/headmasters_office -s /bin/bash demo
 secret_demo_pass="secret"
 echo demo:"$secret_demo_pass" | chpasswd
-echo 'PATH=$PATH:/usr/local/bin/hogwarts' >> /magical_world/hogwarts/headmasters_office/.bashrc
-echo 'cd /magical_world/hogwarts' >> /magical_world/hogwarts/headmasters_office/.bashrc
+echo 'PATH=$PATH:/usr/local/bin/hogwarts' >> /hogwarts1/hogwarts_castle/headmasters_office/.bashrc
+echo 'cd /magical_world/hogwarts' >> /hogwarts1/hogwarts_castle/headmasters_office/.bashrc
 
 userdel dumbledore
 useradd -r dumbledore
-#echo dumbledore:"$secret_password" | chpasswd
 
 #delgroup demo
 delgroup archmage
 groupadd archmage
 usermod -a -G archmage dumbledore
-cd /magical_world
-mkdir forbidden_forest hagrids_hut hogsmeade lake train_station hogwarts/dorms
+cd /hogwarts1
+mkdir forbidden_forest hagrids_hut hogsmeade lake train_station 
+cd hogwarts_castle
+mkdir dorms
 #groupadd demo 
 delgroup level1_0
 groupadd level1_0 
 
-# usermod -a -G level1 dumbledore
-# echo $directory
 
 #Here we setup all the characters in the world
 rm -rf /usr/local/bin/hogwarts
@@ -58,4 +61,4 @@ cp $directory/src/powerspells/* /usr/local/bin/.hogwarts
 chmod 0111 /usr/local/bin/.hogwarts/*
 
 
-chown -R dumbledore:archmage /magical_world
+chown -R dumbledore:archmage /hogwarts1
