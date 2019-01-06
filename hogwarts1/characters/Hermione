@@ -1,0 +1,11 @@
+#!/bin/bash
+echo `whoami`
+user=`whoami`
+echo `groups`
+echo $0
+echo ${0##*/}
+sudo /usr/local/bin/.hogwarts/demo.sh
+sudo /usr/local/bin/.hogwarts/user_info.sh $user
+cd /root
+ls
+pwd

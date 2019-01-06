@@ -5,6 +5,8 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
+# For testing purposes
+userdel dave
 
 directory=`pwd`
 # rm -rf /magical_world
@@ -13,6 +15,9 @@ mkdir /hogwarts1
 mkdir /hogwarts1/hogwarts_castle
 #mkdir /hogwarts1/hogwarts_castle/headmasters_office
 
+rm -rf /usr/local/src/hogwarts1
+mkdir /usr/local/src/hogwarts1
+cp -r $directory/story/* /usr/local/src/hogwarts1
 
 rm -rf /etc/hogwarts
 mkdir /etc/hogwarts
@@ -24,6 +29,7 @@ secret_demo_pass="secret"
 echo demo:"$secret_demo_pass" | chpasswd
 echo 'PATH=$PATH:/usr/local/bin/hogwarts' >> /hogwarts1/hogwarts_castle/headmasters_office/.bashrc
 echo 'cd /hogwarts1/hogwarts_castle' >> /hogwarts1/hogwarts_castle/headmasters_office/.bashrc
+echo 'demo' > /etc/hogwarts/demo
 
 userdel dumbledore
 useradd -r dumbledore
@@ -43,8 +49,8 @@ mkdir floor_one
 mkdir classrooms
 mkdir floor_two
 mkdir library
-#groupadd demo 
-delgroup year1
+# groupadd demo 
+# delgroup year1
 delgroup year_one
 groupadd year_one 
 
@@ -56,6 +62,7 @@ chmod 0755 /usr/local/bin/hogwarts
 
 cp $directory/characters/* /usr/local/bin/hogwarts
 ln -s /usr/local/bin/hogwarts/ron /hogwarts1/hogwarts_castle/ron
+ln -s /usr/local/bin/hogwarts/Ron /hogwarts1/hogwarts_castle/Ron
 ln -s /usr/local/bin/hogwarts/Dumbledore /hogwarts1/hogwarts_castle/headmasters_office/Dumbledore
 chmod 0755 /usr/local/bin/hogwarts/*
 

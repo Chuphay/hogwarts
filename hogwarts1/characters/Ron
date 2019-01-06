@@ -1,0 +1,18 @@
+#!/bin/bash
+user=`whoami`
+character=$0
+echo $character
+the_character="${character##*/}"
+
+sudo /usr/local/bin/.hogwarts/user_info.sh $user
+level=$(sudo /usr/local/bin/.hogwarts/user_info.sh $user)
+echo level $level
+
+default(){
+    cat /usr/local/src/hogwarts1/default/${the_character}.txt
+}
+
+default
+
+#if [ "$the_level" = "demo" ]
+#    then  
