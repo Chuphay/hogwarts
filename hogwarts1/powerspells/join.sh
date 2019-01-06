@@ -8,14 +8,15 @@ do
     else
         echo "user does not exist. create a password"
 	read -sp 'Password: ' passvar
-        useradd -m -d /magical_world/hogwarts/dorms/$uservar \
+        useradd -m -d /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar \
              -s /bin/bash -e `date -d "1 days" +"%Y-%m-%d"` $uservar
         # chage -E `date -d "30 days" +"%Y-%m-%d"` $uservar
         echo $uservar:"$passvar" | chpasswd
         #touch /magical_world/hogwarts/dorms/$uservar/.bashrc
-        echo 'PATH=$PATH:/usr/local/bin/hogwarts' >> /magical_world/hogwarts/dorms/$uservar/.bashrc
-        echo 'alias whereami=pwd' >> /magical_world/hogwarts/dorms/$uservar/.bashrc
-        usermod -a -G level1_0 $uservar
+        echo 'PATH=$PATH:/usr/local/bin/hogwarts' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
+        echo 'alias whereami=pwd' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
+        usermod -a -G year_one $uservar
+        echo "year_one 0" > /etc/hogwarts/$uservar
         echo "You are all setup, exit (by typing exit and then enter) and then use ssh $uservar@hogwarts.ai"
         break
     fi
