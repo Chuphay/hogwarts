@@ -45,7 +45,8 @@ mkdir floor_two
 mkdir library
 #groupadd demo 
 delgroup year1
-groupadd year1 
+delgroup year_one
+groupadd year_one 
 
 
 #Here we setup all the characters in the world
