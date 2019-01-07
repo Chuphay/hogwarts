@@ -1,14 +1,71 @@
 #!/bin/bash
 
-echo "Congratulations, you have successfully navigated around the castle!"
-echo "Do you wish to join Hogwarts"
-read -p "(yes/no) " join
+user=`whoami`
+character=$0
+the_character="${character##*/}"
 
-if [ $join = "yes" ]
+level=$(sudo /usr/local/bin/.hogwarts/user_info.sh $user)
+
+default(){
+    cat /usr/local/src/hogwarts1/default/${the_character}.txt
+}
+
+if [ "$level" = "demo" ]
 then
-    sudo /usr/local/bin/.hogwarts/join.sh
-else
-    echo "Oh well..."
-fi
+    echo "Congratulations, you have successfully navigated around the castle!"
+    echo "Do you wish to join Hogwarts"
+    read -p "(yes/no) " join
 
+    if [ $join = "yes" ]
+    then
+        sudo /usr/local/bin/.hogwarts/join.sh
+    else
+        echo "Oh well..."
+    fi
+elif [ "$level" = "year_one 0" ]
+then
+    echo "YEAR ONE 0!!!!!"
+    sudo /usr/local/bin/.hogwarts/power_up.sh $user 1 
+elif [ "$level" = "year_one 1" ]
+then
+    echo "YEAR ONE 1!!!!!"
+    sudo /usr/local/bin/.hogwarts/power_up.sh $user 2 
+elif [ "$level" = "year_one 2" ]
+then
+    echo "YEAR ONE 2!!!!!"
+    sudo /usr/local/bin/.hogwarts/power_up.sh $user 3 
+elif [ "$level" = "year_one 3" ]
+then
+    echo "YEAR ONE 3!!!!!"
+    sudo /usr/local/bin/.hogwarts/power_up.sh $user 4 
+elif [ "$level" = "year_one 4" ]
+then
+    echo "YEAR ONE 4!!!!!"
+    sudo /usr/local/bin/.hogwarts/power_up.sh $user 5 
+elif [ "$level" = "year_one 5" ]
+then
+    echo "YEAR ONE 5!!!!!"
+    sudo /usr/local/bin/.hogwarts/power_up.sh $user 6 
+elif [ "$level" = "year_one 6" ]
+then
+    echo "YEAR ONE 6!!!!!"
+    sudo /usr/local/bin/.hogwarts/power_up.sh $user 7 
+elif [ "$level" = "year_one 7" ]
+then
+    echo "YEAR ONE 7!!!!!"
+    sudo /usr/local/bin/.hogwarts/power_up.sh $user 8 
+elif [ "$level" = "year_one 8" ]
+then
+    echo "YEAR ONE 8!!!!!"
+    sudo /usr/local/bin/.hogwarts/power_up.sh $user 9 
+elif [ "$level" = "year_one 9" ]
+then
+    echo "YEAR ONE 9!!!!! You've reached the end... but one last thing"
+elif [ "$level" = "year_one 10" ]
+then
+    echo "YEAR ONE 10!!!!! Yay! you've defeated the bad guy"
+else
+    echo "yikes, fell off a cliff"
+    default
+fi
 

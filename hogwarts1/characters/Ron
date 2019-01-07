@@ -12,7 +12,42 @@ default(){
     cat /usr/local/src/hogwarts1/default/${the_character}.txt
 }
 
-default
-
-#if [ "$the_level" = "demo" ]
+if [ "$level" = "demo" ]
+then 
+    echo "DEMO!!!!"
+elif [ "$level" = "year_one 0" ]
+then 
+    echo "YEAR ONE 0!!!!!"
+elif [ "$level" = "year_one 1" ]
+then 
+    echo "YEAR ONE 1!!!!!"
+elif [ "$level" = "year_one 2" ]
+then 
+    echo "YEAR ONE 2!!!!!"
+elif [ "$level" = "year_one 3" ]
+then 
+    echo "YEAR ONE 3!!!!!"
+elif [ "$level" = "year_one 4" ]
+then 
+    echo "YEAR ONE 4!!!!!"
+elif [ "$level" = "year_one 5" ]
+then 
+    echo "YEAR ONE 5!!!!!"
+elif [ "$level" = "year_one 6" ]
+then 
+    echo "YEAR ONE 6!!!!!"
+elif [ "$level" = "year_one 7" ]
+then 
+    echo "YEAR ONE 7!!!!!"
+elif [ "$level" = "year_one 8" ]
+then 
+    echo "YEAR ONE 8!!!!!"
+elif [ "$level" = "year_one 9" ]
+then 
+    echo "YEAR ONE 9!!!!!"
+else
+    echo "yikes, fell off a cliff"
+    default
+fi
+#if [ "$level" = "demo" ]
 #    then  
