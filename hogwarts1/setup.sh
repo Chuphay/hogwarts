@@ -62,9 +62,25 @@ chmod 0755 /usr/local/bin/hogwarts
 
 
 cp $directory/characters/Dumbledore /usr/local/bin/hogwarts
-cp $directory/characters/Character /usr/local/bin/hogwarts/Ron
-ln -s /usr/local/bin/hogwarts/Character /hogwarts1/hogwarts_castle/Ron
 ln -s /usr/local/bin/hogwarts/Dumbledore /hogwarts1/hogwarts_castle/headmasters_office/Dumbledore
+cp $directory/characters/Character /usr/local/bin/hogwarts/Ron
+ln -s /usr/local/bin/hogwarts/Ron /hogwarts1/hogwarts_castle/Ron
+cp $directory/characters/Character /usr/local/bin/hogwarts/Flitwick
+ln -s /usr/local/bin/hogwarts/Flitwick /hogwarts1/hogwarts_castle/Flitwick
+cp $directory/characters/Character /usr/local/bin/hogwarts/Binns
+ln -s /usr/local/bin/hogwarts/Binns /hogwarts1/hogwarts_castle/Binns
+cp $directory/characters/Character /usr/local/bin/hogwarts/Hagrid
+ln -s /usr/local/bin/hogwarts/Hagrid /hogwarts1/hogwarts_castle/Hagrid
+cp $directory/characters/Character /usr/local/bin/hogwarts/Hermione
+ln -s /usr/local/bin/hogwarts/Hermione /hogwarts1/hogwarts_castle/Hermione
+cp $directory/characters/Character /usr/local/bin/hogwarts/Malfoy
+ln -s /usr/local/bin/hogwarts/Malfoy /hogwarts1/hogwarts_castle/Malfoy
+cp $directory/characters/Character /usr/local/bin/hogwarts/McGonagall
+ln -s /usr/local/bin/hogwarts/McGonagall /hogwarts1/hogwarts_castle/McGonagall
+cp $directory/characters/Character /usr/local/bin/hogwarts/Quirrell
+ln -s /usr/local/bin/hogwarts/Quirrell /hogwarts1/hogwarts_castle/Quirrell
+cp $directory/characters/Character /usr/local/bin/hogwarts/Snape
+ln -s /usr/local/bin/hogwarts/Snape /hogwarts1/hogwarts_castle/Snape
 chmod 0755 /usr/local/bin/hogwarts/*
 
 # Here we setup scripts that run as root
