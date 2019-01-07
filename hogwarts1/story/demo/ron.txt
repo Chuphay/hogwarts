@@ -1,5 +1,0 @@
-Did you know you can type cd to change your location?
-
-For example try 
-
-> cd harrys_room
