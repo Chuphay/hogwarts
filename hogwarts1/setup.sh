@@ -54,7 +54,6 @@ mkdir library
 delgroup year_one
 groupadd year_one 
 
-
 #Here we setup all the characters in the world
 rm -rf /usr/local/bin/hogwarts
 mkdir /usr/local/bin/hogwarts
@@ -94,5 +93,12 @@ chmod 0700 /usr/local/bin/.hogwarts
 cp $directory/powerspells/* /usr/local/bin/.hogwarts
 chmod 0111 /usr/local/bin/.hogwarts/*
 
-
+castle="/hogwarts1/hogwarts_castle"
 chown -R dumbledore:archmage /hogwarts1
+chown -R dumbledore:year_one /hogwarts1/hagrids_hut $castle/library $castle/great_hall $castle/classrooms $castle/headmasters_office 
+chown -R dumbledore:year_one $castle/gryffindor_tower 
+chmod -R 0750 /hogwarts1
+chmod 0755 /hogwarts1 /hogwarts1/hagrids_hut
+chmod 0755 $castle
+chmod -R 0755 $castle/library $castle/great_hall $castle/headmasters_office 
+chmod 0755 $castle/gryffindor_tower

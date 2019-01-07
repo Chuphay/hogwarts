@@ -2,7 +2,7 @@ Did you know you can type \033[96mcd\033[0m to change your location?
 
 For example, if you want to go to gryffindor_tower, you should type 
 
-cd \033[95m$gryffindor_tower\033[0m
+$ \033[95mcd gryffindor_tower\033[0m
 
 There you will find Harry, you should talk to him
 
