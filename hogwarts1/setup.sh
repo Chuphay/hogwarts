@@ -60,9 +60,10 @@ rm -rf /usr/local/bin/hogwarts
 mkdir /usr/local/bin/hogwarts
 chmod 0755 /usr/local/bin/hogwarts
 
-cp $directory/characters/* /usr/local/bin/hogwarts
-ln -s /usr/local/bin/hogwarts/ron /hogwarts1/hogwarts_castle/ron
-ln -s /usr/local/bin/hogwarts/Ron /hogwarts1/hogwarts_castle/Ron
+
+cp $directory/characters/Dumbledore /usr/local/bin/hogwarts
+cp $directory/characters/Character /usr/local/bin/hogwarts/Ron
+ln -s /usr/local/bin/hogwarts/Character /hogwarts1/hogwarts_castle/Ron
 ln -s /usr/local/bin/hogwarts/Dumbledore /hogwarts1/hogwarts_castle/headmasters_office/Dumbledore
 chmod 0755 /usr/local/bin/hogwarts/*
 
