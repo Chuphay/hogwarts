@@ -9,7 +9,7 @@ do
         echo "user does not exist. create a password"
 	read -sp 'Password: ' passvar
         useradd -m -d /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar \
-             -s /bin/bash -e `date -d "1 days" +"%Y-%m-%d"` $uservar
+             -s /bin/bash -e `date -d "2 days" +"%Y-%m-%d"` $uservar
         # chage -E `date -d "30 days" +"%Y-%m-%d"` $uservar
         echo $uservar:"$passvar" | chpasswd
         #touch /magical_world/hogwarts/dorms/$uservar/.bashrc
