@@ -40,16 +40,17 @@ delgroup archmage
 groupadd archmage
 usermod -a -G archmage dumbledore
 cd /hogwarts1
-mkdir forbidden_forest hagrids_hut hogsmeade lake train_station 
+# mkdir forbidden_forest hagrids_hut hogsmeade lake train_station 
+mkdir hagrids_hut
 cd hogwarts_castle
 mkdir gryffindor_tower
 mkdir gryffindor_tower/dorms
 mkdir great_hall
-mkdir dungeons
-mkdir floor_one
+# mkdir dungeons
+# mkdir floor_one
 mkdir classrooms
 mkdir classrooms/History classrooms/Charms classrooms/Transfiguration classrooms/DADA classrooms/Potions
-mkdir floor_two
+mkdir second_floor
 mkdir library
 # groupadd demo 
 # delgroup year1
