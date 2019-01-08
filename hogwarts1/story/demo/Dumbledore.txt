@@ -1,1 +1,22 @@
-[5mDefault text... [31mprobably an error[0m
+Hello and welcome to Hogwarts
+
+To have gotten this far means that you are well on your way to becoming a wizard.
+
+You have already learned four commands
+
+\e[96mcd room_name\e[0m to enter into a room
+
+\e[96mcd ..\e[0m to exit a room
+
+\e[96mls\e[0m to illuminate a room
+
+\e[96mssh\e[0m to enter into this magical realm
+
+I will teach you one more. But don't use it yet! Use this when you are ready to leave
+
+It is \e[96mexit\e[0m, and it will take you away from this magical world and bring you back to your own world
+
+My recommendation is to write these spells down, so you can come back to them easily
+
+Please do that now. Find a piece of paper, and write those commands down
+

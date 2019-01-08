@@ -1,0 +1,68 @@
+#!/bin/bash
+user=`whoami`
+character=$0
+echo $character
+the_character="${character##*/}"
+
+sudo /usr/local/bin/.hogwarts/user_info.sh $user
+level=$(sudo /usr/local/bin/.hogwarts/user_info.sh $user)
+echo level $level
+
+default(){
+    cat /usr/local/src/hogwarts1/default/Welcome.txt
+}
+
+if [ "$level" = "demo" ]
+then 
+    echo "DEMO!!!!"
+    echo -e "$(cat /usr/local/src/hogwarts1/demo/Welcome.txt)"
+elif [ "$level" = "year_one 0" ]
+then 
+   echo "YEAR ONE 0!!!!!"
+    echo -e "$(cat /usr/local/src/hogwarts1/level_0/Welcome.txt)"
+elif [ "$level" = "year_one 1" ]
+then 
+    echo "YEAR ONE 1!!!!!"
+    echo -e "$(cat /usr/local/src/hogwarts1/level_1/Welcome.txt)"
+elif [ "$level" = "year_one 2" ]
+then 
+    echo "YEAR ONE 2!!!!!"
+    echo -e "$(cat /usr/local/src/hogwarts1/level_2/Welcome.txt)"
+elif [ "$level" = "year_one 3" ]
+then 
+    echo "YEAR ONE 3!!!!!"
+    echo -e "$(cat /usr/local/src/hogwarts1/level_3/Welcome.txt)"
+elif [ "$level" = "year_one 4" ]
+then 
+    echo "YEAR ONE 4!!!!!"
+    echo -e "$(cat /usr/local/src/hogwarts1/level_4/Welcome.txt)"
+elif [ "$level" = "year_one 5" ]
+then 
+    echo "YEAR ONE 5!!!!!"
+    echo -e "$(cat /usr/local/src/hogwarts1/level_5/Welcome.txt)"
+elif [ "$level" = "year_one 6" ]
+then 
+    echo "YEAR ONE 6!!!!!"
+    echo -e "$(cat /usr/local/src/hogwarts1/level_6/Welcome.txt)"
+elif [ "$level" = "year_one 7" ]
+then 
+    echo "YEAR ONE 7!!!!!"
+    echo -e "$(cat /usr/local/src/hogwarts1/level_7/Welcome.txt)"
+elif [ "$level" = "year_one 8" ]
+then 
+    echo "YEAR ONE 8!!!!!"
+    echo -e "$(cat /usr/local/src/hogwarts1/level_8/Welcome.txt)"
+elif [ "$level" = "year_one 9" ]
+then 
+    echo "YEAR ONE 9!!!!!"
+    echo -e "$(cat /usr/local/src/hogwarts1/level_9/Welcome.txt)"
+elif [ "$level" = "year_one 10" ]
+then 
+    echo "YEAR ONE 10!!!!!"
+    echo -e "$(cat /usr/local/src/hogwarts1/level_10/Welcome.txt)"
+else
+    echo "yikes, fell off a cliff"
+    default
+fi
+#if [ "$level" = "demo" ]
+#    then  

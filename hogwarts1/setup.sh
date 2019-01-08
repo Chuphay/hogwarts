@@ -29,6 +29,7 @@ secret_demo_pass="secret"
 echo demo:"$secret_demo_pass" | chpasswd
 echo 'PATH=$PATH:/usr/local/bin/hogwarts' >> /hogwarts1/hogwarts_castle/headmasters_office/.bashrc
 echo 'cd /hogwarts1/hogwarts_castle' >> /hogwarts1/hogwarts_castle/headmasters_office/.bashrc
+echo 'Welcome' >> /hogwarts1/hogwarts_castle/headmasters_office/.profile
 echo 'demo' > /etc/hogwarts/demo
 
 userdel dumbledore
@@ -47,6 +48,7 @@ mkdir great_hall
 mkdir dungeons
 mkdir floor_one
 mkdir classrooms
+mkdir classrooms/History classrooms/Charms classrooms/Transfiguration classrooms/DADA classrooms/Potions
 mkdir floor_two
 mkdir library
 # groupadd demo 
@@ -60,14 +62,15 @@ mkdir /usr/local/bin/hogwarts
 chmod 0755 /usr/local/bin/hogwarts
 
 
+cp $directory/characters/Welcome /usr/local/bin/hogwarts
 cp $directory/characters/Dumbledore /usr/local/bin/hogwarts
 ln -s /usr/local/bin/hogwarts/Dumbledore /hogwarts1/hogwarts_castle/headmasters_office/Dumbledore
 cp $directory/characters/Character /usr/local/bin/hogwarts/Ron
 ln -s /usr/local/bin/hogwarts/Ron /hogwarts1/hogwarts_castle/Ron
 cp $directory/characters/Character /usr/local/bin/hogwarts/Flitwick
-ln -s /usr/local/bin/hogwarts/Flitwick /hogwarts1/hogwarts_castle/classrooms/Flitwick
+ln -s /usr/local/bin/hogwarts/Flitwick /hogwarts1/hogwarts_castle/classrooms/Charms/Flitwick
 cp $directory/characters/Character /usr/local/bin/hogwarts/Binns
-ln -s /usr/local/bin/hogwarts/Binns /hogwarts1/hogwarts_castle/classrooms/Binns
+ln -s /usr/local/bin/hogwarts/Binns /hogwarts1/hogwarts_castle/classrooms/History/Binns
 cp $directory/characters/Character /usr/local/bin/hogwarts/Harry
 ln -s /usr/local/bin/hogwarts/Harry /hogwarts1/hogwarts_castle/gryffindor_tower/Harry
 cp $directory/characters/Character /usr/local/bin/hogwarts/Hagrid
@@ -77,11 +80,11 @@ ln -s /usr/local/bin/hogwarts/Hermione /hogwarts1/hogwarts_castle/library/Hermio
 cp $directory/characters/Character /usr/local/bin/hogwarts/Malfoy
 ln -s /usr/local/bin/hogwarts/Malfoy /hogwarts1/hogwarts_castle/great_hall/Malfoy
 cp $directory/characters/Character /usr/local/bin/hogwarts/McGonagall
-ln -s /usr/local/bin/hogwarts/McGonagall /hogwarts1/hogwarts_castle/classrooms/McGonagall
+ln -s /usr/local/bin/hogwarts/McGonagall /hogwarts1/hogwarts_castle/classrooms/Transfiguration/McGonagall
 cp $directory/characters/Character /usr/local/bin/hogwarts/Quirrell
-ln -s /usr/local/bin/hogwarts/Quirrell /hogwarts1/hogwarts_castle/classrooms/Quirrell
+ln -s /usr/local/bin/hogwarts/Quirrell /hogwarts1/hogwarts_castle/classrooms/DADA/Quirrell
 cp $directory/characters/Character /usr/local/bin/hogwarts/Snape
-ln -s /usr/local/bin/hogwarts/Snape /hogwarts1/hogwarts_castle/classrooms/Snape
+ln -s /usr/local/bin/hogwarts/Snape /hogwarts1/hogwarts_castle/classrooms/Potions/Snape
 chmod 0755 /usr/local/bin/hogwarts/*
 
 # Here we setup scripts that run as root

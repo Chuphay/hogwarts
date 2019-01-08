@@ -12,6 +12,8 @@ default(){
 
 if [ "$level" = "demo" ]
 then
+    echo -e "$(cat /usr/local/src/hogwarts1/demo/Dumbledore.txt)"
+    echo ""
     echo "Congratulations, you have successfully navigated around the castle!"
     echo "Do you wish to join Hogwarts"
     read -p "(yes/no) " join
@@ -20,7 +22,8 @@ then
     then
         sudo /usr/local/bin/.hogwarts/join.sh
     else
-        echo "Oh well..."
+        echo "Oh well... maybe another day"
+        echo "type exit in the command prompt to exit"
     fi
 elif [ "$level" = "year_one 0" ]
 then

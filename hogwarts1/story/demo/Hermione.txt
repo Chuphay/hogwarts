@@ -1,1 +1,10 @@
-[5mDefault text... [31mprobably an error[0m
+h hi!
+
+Are you a new student?
+
+You're going to love it here! So many books
+
+So much homework! What fun
+
+You should go see Dumbledore in the headmasters_office if you want to join
+

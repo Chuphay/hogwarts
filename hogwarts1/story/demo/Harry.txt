@@ -1,1 +1,11 @@
-[5mDefault text... [31mprobably an error[0m
+Ahh... my scar hurts
+
+Go away
+
+Use the command to \e[96mcd ..\e[0m to exit a room
+
+try it like
+
+$ \e[95mcd ..\e[0m
+
+Go away now
