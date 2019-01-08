@@ -7,6 +7,7 @@ fi
 
 # For testing purposes
 userdel dave
+userdel Anna
 
 directory=`pwd`
 # rm -rf /magical_world
