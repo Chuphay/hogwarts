@@ -1,1 +1,23 @@
-[5mDefault text... [31mprobably an error[0m
+Welcome to History class
+
+My name is Professor Binns and I am a ghost. 
+
+I was teaching history one day, and it was so boring that I died of boredom...
+
+So, instead of teaching you history, I am just going to let you read the book by yourself
+
+You will notice in this classroom, there are the first 8 chapters of a History of Wizardy
+
+There will be no tests... 
+
+However, after Christmas break, you should come back because I will teach you a new spell
+
+How do you read a chapter?
+
+Simply use the command \e[96mcat\e[0m
+
+Like this
+
+$ \e[95mcat chapter_1\e[0m
+
+dont forget that the $ sign represents your prompt, try typing in the command in magenta now. 
