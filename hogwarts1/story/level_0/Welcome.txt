@@ -18,4 +18,16 @@
                    \__)
 
 \e[0m
-Welcome to Hogwarts school of wizardry! 
+Welcome to Hogwarts School of Wizardry!
+
+A couple notes to remember.
+
+\e[96mls\e[0m illuminates your surroundings
+
+\e[96mcd room_name\e[0m is used to enter a room
+
+\e[96mcd ..\e[0m is used to exit a room
+
+Explore, experiment, and talk to whomever you meet. But please do \e[31mnot\e[0m use your mouse. It may be uncomfortable at first, but eventually you will pick up speed using your wand.
+
+Also, I should warn you, the second floor is forbidden.  

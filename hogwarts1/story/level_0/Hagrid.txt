@@ -1,1 +1,15 @@
-[5mDefault text... [31mprobably an error[0m
+Hello there mate
+
+How are you liking Hogwarts so far?
+
+Told you would like it.
+
+Did I ever twll you, I use to have a wand? I miss it so much.
+
+Did you know that your wand can take you immediately back to your dorm room?
+
+I know my hut is far away from your dorm. You can use \e[96mcd ~\e[0m to get quickly back to your dorm. 
+
+Try:
+
+$ \e[95mcd ~\e[0m

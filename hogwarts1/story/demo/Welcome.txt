@@ -18,4 +18,22 @@
                    \__)
 
 \e[0m
-Welcome to Hogwarts school of wizardry! 
+Welcome to Hogwarts School of Wizardry! 
+
+You made it! Congratulations! 
+
+Probably the hardest part of your journey is over. Most people can't even find a wand...
+
+A couple of pointers to help you on your journey.
+
+First of all, have fun! Explore, experiment, and talk to whomever you meet. 
+
+Second, don't forget the spells you have already learned. A great idea is to write them down in a notebook. Up to now, you have learned two spells:
+
+\e[96mls\e[0m which you use to illuminate your surroundings
+
+\e[96mssh\e[0m which is the spell you used to travel to this magical world
+
+Third, try not to use your mouse. It may be uncomfortable at first, but as you practice using your wand, you will gain speed and technique.
+
+Have fun!

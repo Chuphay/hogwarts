@@ -1,1 +1,15 @@
-[5mDefault text... [31mprobably an error[0m
+Hope you had a productive first week!
+
+I should be the last person you talk to every week, because I will advance you to the next week when you are finished.
+
+Usually, I will check your homework, but this week, since there was none, I will simply remind you of the spells you have learned, and ask you to make sure that you are ready to continue on.
+
+You have learned three new spells this week:
+
+\e[96mecho\e[0m which repeats the target of the spell
+
+\e[96mwhereami\e[0m which tells you your current location
+
+\e[96mcat\e[0m which prints the target of a spell, usually used on .txt files
+
+Finally, Hagrid told you about \e[96mcd ~\e[0m which will quickly bring you back to your dorm room.
