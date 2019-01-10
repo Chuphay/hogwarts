@@ -1,0 +1,19 @@
+Last week we learned the important \e[96mecho\e[0m spell
+
+Today we are going to learn the \e[96mtouch\e[0m spell
+
+Remember that spells are generally cast in the following manner
+
+$ spell -options target
+
+If you mess up an invocation it isn't going to work, double check your spelling. Magic is one of those things where you really need to be exact, mis-pronouncing a spell usually will end up with nothing happening. So pay attention! Finally, we will learn about options later.
+
+\e[96mtouch\e[0m is a spell of creation. The target is the thing you want to create. 
+
+There are protections in this castle that will not permit you to willy-nilly create things anywhere you want. You can only create things in your own dorm room. Please try this at home:
+
+$ \e[95mcd ~\e[0m
+$ \e[95mtouch test\e[0m
+$ \e[95mls\e[0m
+
+Remember, practice makes perfect!

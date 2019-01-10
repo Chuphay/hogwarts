@@ -1,0 +1,31 @@
+Last time we learned how to find out our location with the spell \e[96mwhereami\e[0m
+
+An equally important spell is to know who you are. If you are good at guessing, you might guess that the correct incantation is
+
+$ \e[95mwhoami\e[0m
+
+Try that.
+
+You do have \e[31mhomework\e[0m this week!
+
+Let me first tell you what your homework is, and then I'll will give you a helpful hint to help you complete it.
+
+Your homework is to create a file in your dorm room called my_name.txt
+
+Inside that text file you should write your name.
+
+Sounds straight-forward enough? 
+
+Here's the helpful hint
+
+Try 
+
+$ \e[95mecho whoami\e[0m
+
+notice it probably doesn't work quite as you expect. To make the spell work correctly you must use the special rune \e[96m`\e[0m which is known as the backtick character and can be found near the 1 on most wands.
+
+Try the following:
+
+$ \e[95mecho `whoami`\e[0m
+
+Good luck on your homework

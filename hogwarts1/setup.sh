@@ -89,7 +89,6 @@ cp $directory/characters/Character /usr/local/bin/hogwarts/Snape
 ln -s /usr/local/bin/hogwarts/Snape /hogwarts1/hogwarts_castle/classrooms/Potions/Snape
 chmod 0755 /usr/local/bin/hogwarts/*
 cp $directory/story/history/* /hogwarts1/hogwarts_castle/classrooms/History/
-chmod 0744 /hogwarts1/hogwarts_castle/classrooms/History/chapter_*
 # Here we setup scripts that run as root
 cp $directory/powerspells/hogwarts_permissions /etc/sudoers.d/
 chmod 0440 /etc/sudoers.d/hogwarts_permissions
@@ -110,3 +109,4 @@ chmod 0755 /hogwarts1 /hogwarts1/hagrids_hut
 chmod 0755 $castle
 chmod -R 0755 $castle/library $castle/great_hall $castle/headmasters_office 
 chmod 0755 $castle/gryffindor_tower
+chmod 0744 /hogwarts1/hogwarts_castle/classrooms/History/chapter_*

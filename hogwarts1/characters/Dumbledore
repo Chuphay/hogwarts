@@ -38,8 +38,13 @@ then
     fi
 elif [ "$level" = "year_one 1" ]
 then
-    echo "YEAR ONE 1!!!!!"
-    sudo /usr/local/bin/.hogwarts/power_up.sh $user 2 
+    if [ "$(cat /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$user/my_name.txt)" == "$user" ]
+    then
+        echo "Congratulations! You have finished your homework!"
+        sudo /usr/local/bin/.hogwarts/power_up.sh $user 2 
+    else
+        echo -e "$(cat /usr/local/src/hogwarts1/level_1/Dumbledore.txt)"
+    fi
 elif [ "$level" = "year_one 2" ]
 then
     echo "YEAR ONE 2!!!!!"
