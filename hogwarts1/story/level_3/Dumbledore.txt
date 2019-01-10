@@ -1,1 +1,11 @@
-[5mDefault text... [31mprobably an error[0m
+There was no homework this week, but you did learn a lot.
+
+Hagrid taught you how to \e[96mpushd\e[0m and \e[96mpopd\e[0m to quickly go to a room and then go back to where you came from.
+
+McGonagall taught you your first spell with an option: \e[96mls -l\e[0m. You saw how some files and directories were off limits because you didn't belong to the right group.
+
+Quirrell taught you how to \e[96mrmdir\e[0m... very dark stuff.
+
+Flitwick taught you the \e[96msleep\e[0m spell, and even more importantly, he taught you how to put that spell in the background by using the \e[96m&\e[0m rune as the last invocation as you cast your spell.
+
+Next week is the Christmas break! Enjoy 

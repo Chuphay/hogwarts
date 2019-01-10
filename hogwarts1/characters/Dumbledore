@@ -59,8 +59,16 @@ then
     fi
 elif [ "$level" = "year_one 3" ]
 then
-    echo "YEAR ONE 3!!!!!"
-    sudo /usr/local/bin/.hogwarts/power_up.sh $user 4 
+    echo -e "$(cat /usr/local/src/hogwarts1/level_0/Dumbledore.txt)"
+    echo "Are you ready for your Christmas break?"
+    read -p "(yes/no) " join
+    if [ $join = "yes" ]
+    then
+        sudo /usr/local/bin/.hogwarts/power_up.sh $user 4 
+        Welcome
+    else
+        echo "very well, come back when you are ready"
+    fi
 elif [ "$level" = "year_one 4" ]
 then
     echo "YEAR ONE 4!!!!!"
