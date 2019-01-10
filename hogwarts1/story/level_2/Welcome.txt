@@ -30,4 +30,6 @@ Previously, you have learned:
 
 \e[96mcd\e[0m is used to change directories (locations)
 
-\e[96mexit\e[0m is the spell thatmakes you exit this world
+\e[96mtouch\e[0m is the spell that creates a new file, but you can only use this in your own dorm room
+
+Finally, you learned how to redirect a spell into a text file by using \e[96m>\e[0m

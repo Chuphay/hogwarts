@@ -1,1 +1,20 @@
-[5mDefault text... [31mprobably an error[0m
+Hello there
+
+Have you been practicing those wand movements I taught you?
+
+\e[96mcd ~\e[0m to quickly go back to your dorm room
+
+and
+
+\e[96mcd ../../..\e[0m to exit multiple rooms at once.
+
+They will help you move around the castle quickly.
+
+Another wand movement that will help you quickly move around can only be used when you concentrate really hard on where you want to go.
+
+Suppose you are in your dorm room and you want to quickly come and visit me. Since you know where I live, you can type the exact path to my hut. Try this:
+
+$ \e[95mcd ~\e[0m
+$ \e[95mcd /hogwarts1/hagrids_hut\e[0m
+
+Hope that helps you navigate around the castle more quickly

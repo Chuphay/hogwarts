@@ -1,1 +1,5 @@
-[5mDefault text... [31mprobably an error[0m
+You had \e[31mhomework\e[0m this week.
+
+Your homework was to create a room inside your dorm room called "closet" and to move the file my_file in your dorm room called my_name.txt with your user_name written inside.
+
+Please revisit the lessons for your lessons and some hints

@@ -1,1 +1,23 @@
-[5mDefault text... [31mprobably an error[0m
+Transfiguration is dangerous.
+
+So far, you have learned \e[96mwhoami\e[0m and \e[96mwhereami\e[0m
+
+Today we will learn two spells that transform a file: \e[96mcp\e[0m and \e[96mmv\e[0m
+
+\e[96mcp\e[0m copies a file
+
+\e[96mmv\e[0m moves a file
+
+Try this in your dorm room:
+
+$ \e[95mcd ~\e[0m
+$ \e[95mtouch test_file.txt\e[0m
+$ \e[95mcp test_file.txt test_file_backup.txt\e[0m
+$ \e[95mls\e[0m
+$ \e[95mmv test_file_backup.txt test_file2.txt\e[0m
+
+Finally, to help you with your homework, you should learn how to move a file into a different room. It is really quite straightforward. Suppose, you have a room in your dorm room called "closet", then you would simply use the following invocation:
+
+$ \e[95mmv test_file2.txt closet\e[0m
+
+As always, practice makes perfect.

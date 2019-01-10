@@ -20,6 +20,8 @@
 \e[0m
 Welcome to Hogwarts School of Wizardry!
 
+You are now in your dorm room. It is located in Gryffindor Tower. To get to the main part of the castle, you will have to leave your room, then leave the dorms, then leave Gryffindor Tower.
+
 A couple notes to remember.
 
 \e[96mls\e[0m illuminates your surroundings

@@ -22,12 +22,10 @@ Welcome to Hogwarts school of wizardry!
 
 Previously, you have learned:
 
-\e[96mecho\e[0m which repeats the target of the spell
+\e[96mmkdir\e[0m which makes a new directory
 
-\e[96mcat\e[0m which prints the target of a spell, usually used on .txt files
+\e[96mcp\e[0m which copies a file
 
-\e[96mls\e[0m which lists the contents of your current location
+\e[96mmv\e[0m which moves a file
 
-\e[96mcd\e[0m is used to change directories (locations)
-
-\e[96mexit\e[0m is the spell thatmakes you exit this world
+\e[96mrm\e[0m which removes a file

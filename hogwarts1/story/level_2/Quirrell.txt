@@ -1,1 +1,19 @@
-[5mDefault text... [31mprobably an error[0m
+D-D-Dark Arts are S-S-Scary
+
+I am going to teach you one of the most s-s-s-scary spells there is \e[96mrm\e[0m
+
+\e[96mrm\e[0m removes a file 
+
+\e[96mrm\e[0m is d-d-dangerous since you cannot raise d-d-dead files from the grave!
+
+M-M-Magic cannot bring dead people back to life... Once you’re dead, you’re dead.
+
+Try this in your dorm room:
+
+$ \e[95mcd ~\e[0m
+$ \e[95mtouch soon_to_be_dead.txt\e[0m
+$ \e[95mls\e[0m
+$ \e[95mrm soon_to_be_dead.txt\e[0m
+$ \e[95mls\e[0m
+
+I think I n-n-need a glass of warm milk

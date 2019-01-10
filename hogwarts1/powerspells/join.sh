@@ -6,7 +6,7 @@ do
     if id $uservar >/dev/null 2>&1; then
         echo "user exists. Please choose another name"
     else
-        echo "user does not exist. create a password"
+        # echo "user does not exist. create a password"
 	read -sp 'Password: ' passvar
         useradd -m -d /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar \
              -s /bin/bash -e `date -d "2 days" +"%Y-%m-%d"` $uservar

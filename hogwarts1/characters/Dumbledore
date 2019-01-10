@@ -33,22 +33,30 @@ then
     if [ $join = "yes" ]
     then
         sudo /usr/local/bin/.hogwarts/power_up.sh $user 1 
+        Welcome
     else
         echo "very well, come back when you are ready"
     fi
 elif [ "$level" = "year_one 1" ]
 then
-    if [ "$(cat /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$user/my_name.txt)" == "$user" ]
+    if [ "$(cat /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$user/my_name.txt 2>&1)" == "$user" ]
     then
         echo "Congratulations! You have finished your homework!"
         sudo /usr/local/bin/.hogwarts/power_up.sh $user 2 
+        Welcome
     else
         echo -e "$(cat /usr/local/src/hogwarts1/level_1/Dumbledore.txt)"
     fi
 elif [ "$level" = "year_one 2" ]
 then
-    echo "YEAR ONE 2!!!!!"
-    sudo /usr/local/bin/.hogwarts/power_up.sh $user 3 
+    if [ "$(cat /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$user/closet/my_name.txt 2>&1)" == "$user" ]
+    then
+        echo "Congratulations! You have finished your homework!"
+        sudo /usr/local/bin/.hogwarts/power_up.sh $user 3 
+        Welcome
+    else
+        echo -e "$(cat /usr/local/src/hogwarts1/level_2/Dumbledore.txt)"
+    fi
 elif [ "$level" = "year_one 3" ]
 then
     echo "YEAR ONE 3!!!!!"
