@@ -52,6 +52,8 @@ mkdir great_hall
 mkdir classrooms
 mkdir classrooms/History classrooms/Charms classrooms/Transfiguration classrooms/DADA classrooms/Potions
 mkdir second_floor
+mkdir second_floor/room1 second_floor/room2
+mkdir second_floor/room2/.trap_door
 mkdir library
 # groupadd demo 
 # delgroup year1
@@ -63,6 +65,7 @@ rm -rf /usr/local/bin/hogwarts
 mkdir /usr/local/bin/hogwarts
 chmod 0755 /usr/local/bin/hogwarts
 
+cp $directory/other/* /usr/local/bin/hogwarts
 
 cp $directory/characters/Welcome /usr/local/bin/hogwarts
 cp $directory/characters/Dumbledore /usr/local/bin/hogwarts
@@ -87,6 +90,9 @@ cp $directory/characters/Character /usr/local/bin/hogwarts/Quirrell
 ln -s /usr/local/bin/hogwarts/Quirrell /hogwarts1/hogwarts_castle/classrooms/DADA/Quirrell
 cp $directory/characters/Character /usr/local/bin/hogwarts/Snape
 ln -s /usr/local/bin/hogwarts/Snape /hogwarts1/hogwarts_castle/classrooms/Potions/Snape
+
+ln -s /usr/local/bin/hogwarts/mirror_of_erised /hogwarts1/hogwarts_castle/second_floor/room1
+ln -s /usr/local/bin/hogwarts/Fluffy /hogwarts1/hogwarts_castle/second_floor/room2
 chmod 0755 /usr/local/bin/hogwarts/*
 cp $directory/story/history/* /hogwarts1/hogwarts_castle/classrooms/History/
 # Here we setup scripts that run as root

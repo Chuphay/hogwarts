@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "This invisibility cloak gives you access to the castle. You can now access the castle as if you were an archmage (but... you should know in your heart that you are not quite there yet)"
+
+user=`whoami`
+
+sudo /usr/local/bin/.hogwarts/grant_archmage.sh $user
+
+echo " "
+echo -e "For the effects of the invisibility cloak to work you must \e[86mexit\e[0m and then log in again"

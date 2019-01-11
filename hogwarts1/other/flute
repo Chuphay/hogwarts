@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+if [[ $# -eq 0 ]]
+then
+    read input
+else
+    input="$@"
+fi
+
+echo $input | base64
+
+
+# to decode use 
+# echo aGVsbG8K | base64 --decode

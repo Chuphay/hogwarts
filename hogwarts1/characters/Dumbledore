@@ -65,6 +65,8 @@ then
     if [ $join = "yes" ]
     then
         sudo /usr/local/bin/.hogwarts/power_up.sh $user 4 
+        ln -s /usr/local/bin/hogwarts/invisibility_cloak /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$user/
+        ln -s /usr/local/bin/hogwarts/flute /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$user/
         Welcome
     else
         echo "very well, come back when you are ready"

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [[ $# -eq 0 ]]
+then
+    read input
+else
+    input="$@"
+fi
+
+if [[ $input == "drowssap" ]]
+then 
+    echo "Congratualtions! You have found the sorcerer's stone"
+else
+    echo $input | rev
+fi
