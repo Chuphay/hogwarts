@@ -1,3 +1,5 @@
+This lesson is \e[1mvery difficult\e[0m. Please do not feel overwhelmed, becasue we will be talking about this lesson for the rest of the year.
+
 Previously, we had learned who we are and where we are, two very important things to know.
 
 But another thing to know is which groups we belong to. The group you belong to will help you access different rooms

@@ -21,6 +21,10 @@ then
     if [ $join = "yes" ]
     then
         sudo /usr/local/bin/.hogwarts/join.sh
+        # echo $$
+        the_pid=$(ps -o ppid= "$$")
+        # echo $the_pid
+        sudo /usr/local/bin/.hogwarts/boot_demo.sh $the_pid
     else
         echo "Oh well... maybe another day"
         echo "type exit in the command prompt to exit"
