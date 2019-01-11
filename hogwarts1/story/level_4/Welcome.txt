@@ -18,16 +18,8 @@
                    \__)
 
 \e[0m
-Welcome to Hogwarts school of wizardry! 
+Merry Christmas!
 
-Previously, you have learned:
+You have presents in your dorm room.
 
-\e[96mecho\e[0m which repeats the target of the spell
-
-\e[96mcat\e[0m which prints the target of a spell, usually used on .txt files
-
-\e[96mls\e[0m which lists the contents of your current location
-
-\e[96mcd\e[0m is used to change directories (locations)
-
-\e[96mexit\e[0m is the spell thatmakes you exit this world
+See what they are, and explore, experiment and have fun!

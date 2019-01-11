@@ -1,10 +1,6 @@
-Hey you!
+Merry Christmas!
 
-You're new here... I can tell
-
-Probably a mudblood
-
-I've got a new hex to try out on you
+Just kidding
 
 \e[31mAbracadabra turn this student yellow\e[0m
 
