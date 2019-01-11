@@ -1,1 +1,16 @@
-[5mDefault text... [31mprobably an error[0m
+Welcome back from Christmas break. Hopefully it was restful.
+
+Last time we learned about \e[96msleep\e[0m and we learned how to put that job in the background using the \e[96m&\e[0m rune.
+
+Today, we are going to learn a powerful charm to see all the different spells that have been cast. It iscalled \e[96mjobs\e[0m!
+
+Try this:
+
+$ \e[95msleep 20 &\e[0m
+$ \e[95mjobs\e[0m
+
+Of course, that was with only one job running. You can try more spells:
+
+$ \e[95msleep 20 &\e[0m
+$ \e[95msleep 15 &\e[0m
+$ \e[95jobs\e[0m
