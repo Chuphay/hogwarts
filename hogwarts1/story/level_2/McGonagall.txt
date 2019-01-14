@@ -1,23 +1,17 @@
 Transfiguration is dangerous.
 
-So far, you have learned \e[96mwhoami\e[0m and \e[96mwhereami\e[0m
+Previously, we had learned who we are and where we are, two very important things to know.
 
-Today we will learn two spells that transform a file: \e[96mcp\e[0m and \e[96mmv\e[0m
+But another thing to know is which groups we belong to. The group you belong to will help you access different rooms and are a way of adding protections to the castle. 
 
-\e[96mcp\e[0m copies a file
+Try this:
 
-\e[96mmv\e[0m moves a file
+$ \e[95mgroups\e[0m
 
-Try this in your dorm room:
+It show that you belong to two groups, one is simply your user name, you will always belong to this group! The other says "year_one", naturally, you are a year_one student, and you can access all the rooms that year_one students can access.
 
-$ \e[95mcd ~\e[0m
-$ \e[95mtouch test_file.txt\e[0m
-$ \e[95mcp test_file.txt test_file_backup.txt\e[0m
-$ \e[95mls\e[0m
-$ \e[95mmv test_file_backup.txt test_file2.txt\e[0m
+After the christmas break, we will learn several shield enchantments. Some of these enchanments will be simple muggle repellents, and some will be so powerful that only a true archmage could break them. We will also learn to change objects from inanimate into animate and visa-versa... but that comes after the christmas break. For now, we must learn about groups.
 
-Finally, to help you with your homework, you should learn how to move a file into a different room. It is really quite straightforward. Suppose, you have a room in your dorm room called "closet", then you would simply use the following invocation:
+But for now, practice, practice, practice!
 
-$ \e[95mmv test_file2.txt closet\e[0m
 
-As always, practice makes perfect.

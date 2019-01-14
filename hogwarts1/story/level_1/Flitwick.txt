@@ -1,6 +1,6 @@
 Last week we learned the important \e[96mecho\e[0m spell
 
-Today we are going to learn the \e[96mtouch\e[0m spell
+Today we are going to learn two new spells, the \e[96mtouch\e[0m spell and the \e[96mcp\e[0m
 
 Remember that spells are generally cast in the following manner
 
@@ -14,6 +14,12 @@ There are protections in this castle that will not permit you to willy-nilly cre
 
 $ \e[95mcd ~\e[0m
 $ \e[95mtouch test\e[0m
+$ \e[95mls\e[0m
+
+\e[96mcp\e[0m is a spell to copy files and even change their names. Try this in your dorm room:
+
+$ \e[95mtouch file1.txt\e[0m
+$ \e[95mcp file1.txt file2.txt\e[0m
 $ \e[95mls\e[0m
 
 Remember, practice makes perfect!

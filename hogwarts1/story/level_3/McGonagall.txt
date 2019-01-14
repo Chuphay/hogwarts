@@ -1,28 +1,22 @@
-This lesson is \e[1mvery difficult\e[0m. Please do not feel overwhelmed, becasue we will be talking about this lesson for the rest of the year.
+As a prelude of what is to come after the Christmas break, we will begin with some \e[1mvery advanced\e[0m magic. Please do not feel overwhelmed, becasue we will be talking about this lesson for the rest of the year.
 
-Previously, we had learned who we are and where we are, two very important things to know.
+Previously, we had learned who we are and where we are, two very important things to know. We also learned about which groups we belonged to, which is an important thing in the realm of magic.
 
-But another thing to know is which groups we belong to. The group you belong to will help you access different rooms
-
-Try this:
-
-$ \e[95mgroups\e[0m
-
-It show that you belong to two groups, one is simply your user name, you will always belong to this group! The other says "year_one", naturally, you are a year_one student, and you can access all the rooms that year_one students can access.
-
-Let me try and make this a little more concrete, by teaching you your first spell with an \e[31moption\e[0m
+Today we will learn our first spell with an \e[31moption\e[0m
 
 We all already know what \e[96mls\e[0m does - it lists the content of your current location. But if we give it an option, it will also show the owner and the group each room belongs to. We do this by providing the option \e[96m-l\e[0m which stands for long. Try this:
 
 $ \e[95mcd /hogwarts1/hogwarts_castle\e[0m
 $ \e[95mls -l\e[0m
 
-You should now see a lot more information about each file in hogwarts_castle. Do \e[1mnot\e[0m be overwhelmed, we will go over most of the main parts of what you see over the rest of the year. 
+You should now see a lot more information about each file in hogwarts_castle. Do \e[1mnot\e[0m be overwhelmed, we will go over most of the main parts of what you see over the rest of the year. For example, you should see:
 
 drwxr-xr-x 2 dumbledore year_one 4096 Jan 10 10:29 library
 
-Pay particular attention to where it says "year_one". This means that anyone in the group "year_one" can access the library. However, 
+Pay particular attention to where it says "year_one". This means that anyone in the group "year_one" can access the library, like you. However, 
 
 drwxr-x--- 2 dumbledore archmage 4.0K Jan 10 10:29 second_floor
 
-This line says that onlly an "archmage" can access the second_floor. Since you are not an archmage, you cannot access this level
+This line says that onlly an "archmage" can access the second_floor. Since you are not an archmage, you cannot access this level.
+
+Next week is Christmas, so no homework this week!

@@ -1,6 +1,6 @@
-Today you will learn a new spell and I will give you some \e[31mhomework\e[0m.
+Today you will learn two new spells and I will give you some \e[31mhomework\e[0m.
 
-The new spell is to create a new room (make a new directory) with the following invocation \e[96mmkdir\e[0m
+The first new spell is to create a new room (make a new directory) with the following invocation \e[96mmkdir\e[0m
 
 As usual, most spells need a target. In this case, the target is the name of the new room.
 
@@ -8,6 +8,18 @@ Try this in your dorm room
 
 $ \[e95mcd ~\e[0m
 $ \[e95mmkdir closet\e[0m
+$ \e[95mcd closet\e[0m
 
-Your \e[31mhomework\e[0m for the day is to make a closet and put inside of it my_name.txt, the file that you created for your homework last time. Professor McGonagall will have hints on how to do that.
+The second spell is \e[96mmv\e[0m which will move a file to a new location. Try this in your dorm room:
+
+$ \e[95mcd ~\e[0m
+$ \e[95mtouch new_file.txt\e[0m
+$ \e[95ls\e[0m
+$ \e[95mmv new_file.txt much_better_name\e[0m
+$ \e[95mls\e[0m
+$ \e[95mmv much_better_name closet/best_name_ever.txt\e[0m
+
+It should be pointed out, and we will get back to this more in the second year, that file extensions (like .txt or .jpeg) have no real meaning in this magical world, they are only useful for mages to remind ourselves what type of content to expect. 
+
+Your \e[31mhomework\e[0m for the day is to make a closet and put inside of it my_name.txt, the file that you created for your homework last time. 
 
