@@ -34,8 +34,6 @@ A couple notes to remember.
 
 \e[96mcd ..\e[0m is used to exit a room
 
-\e[96mexit\e[0m is used to exit this world
-
 Explore, experiment, and talk to whomever you meet. But please do \e[31mnot\e[0m use your mouse. It may be uncomfortable at first, but eventually you will pick up speed using your wand.
 
 Also, you should be warned, the second floor is forbidden.  
