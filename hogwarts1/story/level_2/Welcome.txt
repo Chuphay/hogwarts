@@ -18,7 +18,7 @@
                    \__)
 
 \e[0m
-Welcome to Hogwarts school of wizardry! 
+Welcome to the third month of your first year at Hogwarts School of Wizardry! 
 
 Previously, you have learned:
 

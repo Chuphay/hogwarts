@@ -18,7 +18,7 @@
                    \__)
 
 \e[0m
-Welcome to Hogwarts school of wizardry! 
+Welcome to the fourth month of your first year. Next month is Christmas Break! So stay sharp and study hard.
 
 Previously, you have learned:
 

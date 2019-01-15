@@ -7,11 +7,19 @@ do
         echo "user exists. Please choose another name"
     else
         # echo "user does not exist. create a password"
-	read -sp 'Password: ' passvar
+        while true; do
+            read -s -p "Password: " password
+            echo
+            read -s -p "Password (again): " password2
+            echo
+            [ "$password" = "$password2" ] && break
+            echo "Please try again"
+        done
+	# read -sp 'Password: ' passvar
         useradd -m -d /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar \
              -s /bin/bash -e `date -d "2 days" +"%Y-%m-%d"` $uservar
         # chage -E `date -d "30 days" +"%Y-%m-%d"` $uservar
-        echo $uservar:"$passvar" | chpasswd
+        echo $uservar:"$password" | chpasswd
         #touch /magical_world/hogwarts/dorms/$uservar/.bashrc
         echo 'PATH=$PATH:/usr/local/bin/hogwarts' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
         echo 'alias whereami=pwd' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc

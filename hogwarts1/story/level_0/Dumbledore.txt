@@ -1,10 +1,10 @@
 Hope you had a productive first week!
 
-I should be the last person you talk to every week, because I will advance you to the next week when you are finished.
+I should be the last person you talk to every week, because I will advance you to the next week when you are finished. If you didn't meet with all your Professors, please answer no at the end of my speech and go visit them.
 
-Usually, I will check your homework, but this week, since there was none, I will simply remind you of the spells you have learned, and ask you to make sure that you are ready to continue on.
+Usually, I will check your homework that your classes provided you, but this week, I weill be giving you your homework.
 
-You have learned three new spells this week:
+First, let me remind you of what you have learned this week:
 
 \e[96mecho\e[0m which repeats the target of the spell
 
@@ -12,4 +12,10 @@ You have learned three new spells this week:
 
 \e[96mcat\e[0m which prints the target of a spell, usually used on .txt files
 
-Finally, Hagrid told you about \e[96mcd ~\e[0m which will quickly bring you back to your dorm room.
+Hagrid also told you about \e[96mcd ~\e[0m which will quickly bring you back to your dorm room.
+
+Now, I will teach you one last spell: \e[96mexit\e[0m . This spell will make you leave Hogwarts to go back to your own Muggle home.
+
+An important part of learning magic is pacing yourself. If you try to learn too much magic all at once, it is known that your head will explode! So it is very important to take breaks.
+
+Your homework for today is to use the \e[96mexit\e[0m spell to go back to the muggle land and take a break. Are you ready for a break?
