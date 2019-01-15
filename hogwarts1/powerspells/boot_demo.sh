@@ -14,4 +14,3 @@ do
     fi
 done
 
-echo "Some type of error. Pease type exit, and then log back in with your username and password"

@@ -27,7 +27,7 @@ then
         sudo /usr/local/bin/.hogwarts/boot_demo.sh $the_pid
     else
         echo "Oh well... maybe another day"
-        echo "type exit in the command prompt to exit"
+        echo -e "type \e[96mexit\e[0m in the command prompt to exit"
     fi
 elif [ "$level" = "year_one 0" ]
 then

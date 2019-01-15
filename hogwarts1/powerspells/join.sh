@@ -12,8 +12,13 @@ do
             echo
             read -s -p "Password (again): " password2
             echo
+            if [ "$password" == "" ]
+            then
+                echo "Invalid Password"
+            else   
             [ "$password" = "$password2" ] && break
             echo "Please try again"
+            fi
         done
 	# read -sp 'Password: ' passvar
         useradd -m -d /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar \
@@ -26,7 +31,7 @@ do
         echo 'Welcome' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.profile
         usermod -a -G year_one $uservar
         echo "year_one 0" > /etc/hogwarts/$uservar
-        echo "You are all setup, exit (by typing exit and then enter) and then use ssh $uservar@hogwarts.ai"
+        echo -e "You are all setup! Please re-log into hogwarts by using the following command: \e[96mssh $uservar@hogwarts.ai\e[0m"
         break
     fi
 done
