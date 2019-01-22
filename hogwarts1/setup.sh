@@ -37,7 +37,7 @@ secret_demo_pass="secret"
 echo demo:"$secret_demo_pass" | chpasswd
 echo 'PATH=$PATH:/usr/local/bin/hogwarts' >> /hogwarts1/hogwarts_castle/headmasters_office/.bashrc
 echo 'cd /hogwarts1/hogwarts_castle' >> /hogwarts1/hogwarts_castle/headmasters_office/.bashrc
-echo 'LS_COLORS="ex=01;4;33"' >> /hogwarts1/hogwarts_castle/headmasters_office/.bashrc
+echo 'LS_COLORS="ex=01;4;33:*.sh=4;31"' >> /hogwarts1/hogwarts_castle/headmasters_office/.bashrc
 echo 'Welcome' >> /hogwarts1/hogwarts_castle/headmasters_office/.profile
 echo 'demo' > /etc/hogwarts/demo
 
