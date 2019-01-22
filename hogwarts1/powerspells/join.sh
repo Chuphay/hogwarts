@@ -5,6 +5,8 @@ do
     read -p 'Username: ' uservar
     if id $uservar >/dev/null 2>&1; then
         echo "user exists. Please choose another name"
+    elif grep -q $uservar /etc/group; then
+        echo "group exists. Please choose another name"
     else
         # echo "user does not exist. create a password"
         while true; do
@@ -28,8 +30,12 @@ do
         #touch /magical_world/hogwarts/dorms/$uservar/.bashrc
         echo 'PATH=$PATH:/usr/local/bin/hogwarts' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
         echo 'alias whereami=pwd' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
+        echo 'umask 002' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
+        echo 'umask 002' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.profile
         echo 'Welcome' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.profile
-        usermod -a -G year_one $uservar
+        # usermod -a -G year_one $uservar
+        usermod -g year_one $uservar
+        usermod -a -G $uservar $uservar
         echo "year_one 0" > /etc/hogwarts/$uservar
         echo -e "You are all setup! Please re-log into hogwarts by using the following command: \e[96mssh $uservar@hogwarts.ai\e[0m"
         break

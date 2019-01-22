@@ -6,8 +6,14 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # For testing purposes
-userdel dave
-userdel Anna
+# userdel dave
+# groupdel dave
+for user in `./get_group.sh year_one`
+do
+    echo deleting:"${user}":done
+    delgroup ${user}
+    userdel ${user}
+done
 
 directory=`pwd`
 # rm -rf /magical_world
