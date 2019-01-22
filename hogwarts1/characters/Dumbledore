@@ -63,7 +63,7 @@ then
     fi
 elif [ "$level" = "year_one 3" ]
 then
-    echo -e "$(cat /usr/local/src/hogwarts1/level_0/Dumbledore.txt)"
+    echo -e "$(cat /usr/local/src/hogwarts1/level_3/Dumbledore.txt)"
     echo "Are you ready for your Christmas break?"
     read -p "(yes/no) " join
     if [ $join = "yes" ]
@@ -77,12 +77,31 @@ then
     fi
 elif [ "$level" = "year_one 4" ]
 then
-    echo "YEAR ONE 4!!!!!"
-    sudo /usr/local/bin/.hogwarts/power_up.sh $user 5 
+    echo -e "$(cat /usr/local/src/hogwarts1/level_4/Dumbledore.txt)"
+    echo "Have you finished exploring?"
+    read -p "(yes/no) " join
+    if [ $join = "yes" ]
+    then
+        sudo /usr/local/bin/.hogwarts/power_up.sh $user 5 
+        cp /usr/local/bin/hogwarts/sleep.sh /hogwarts1/hogwarts_castle/classrooms/Potions/
+        Welcome
+    else
+        echo "very well, come back when you are ready"
+    fi
+
 elif [ "$level" = "year_one 5" ]
 then
-    echo "YEAR ONE 5!!!!!"
-    sudo /usr/local/bin/.hogwarts/power_up.sh $user 6 
+ 
+    if [ "$(cat /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$user/permissions.txt 2>&1)" == "user group other" ]
+    then
+        echo "Yay! You finished your homework"   
+        sudo /usr/local/bin/.hogwarts/power_up.sh $user 6 
+        Welcome
+    else
+        echo -e "$(cat /usr/local/src/hogwarts1/level_5/Dumbledore.txt)"
+    fi   
+    # echo "YEAR ONE 5!!!!!"
+    # sudo /usr/local/bin/.hogwarts/power_up.sh $user 6 
 elif [ "$level" = "year_one 6" ]
 then
     echo "YEAR ONE 6!!!!!"

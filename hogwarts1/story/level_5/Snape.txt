@@ -1,13 +1,31 @@
-Potions
-Is not
-A game.
+Dumbledore
+said
+I must 
+teach you.
 
-You
-Are
-Too young 
-To learn it.
+I have 
+added
+a potion
+to the materials
+in this 
+classroom
 
-Deduct 
-50 points
-From 
-Gryffindor.
+The first
+thing
+to learn
+is how to 
+use
+a potion.
+
+You 
+are 
+probably 
+too stupid
+to do it
+yourself.
+Deduct 25 points
+from Gryffindor.
+
+Consume a potion like this:
+
+$ \e[95m./sleep.sh\e[0m
