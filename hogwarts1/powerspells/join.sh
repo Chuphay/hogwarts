@@ -31,7 +31,7 @@ do
         echo 'PATH=$PATH:/usr/local/bin/hogwarts' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
         echo 'alias whereami=pwd' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
         echo 'umask 002' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
-        echo 'LS_COLORS="ex=01;4;33:*.sh=4;31"' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
+        echo 'LS_COLORS="*.sh=4;31"' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
         echo 'umask 002' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.profile
         echo 'Welcome' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.profile
         # usermod -a -G year_one $uservar

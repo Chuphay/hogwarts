@@ -69,8 +69,8 @@ then
     if [ $join = "yes" ]
     then
         sudo /usr/local/bin/.hogwarts/power_up.sh $user 4 
-        ln -s /usr/local/bin/hogwarts/invisibility_cloak /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$user/
-        ln -s /usr/local/bin/hogwarts/flute /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$user/
+        cp /usr/local/bin/hogwarts/empty /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$user/invisibility_cloak
+        cp /usr/local/bin/hogwarts/empty /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$user/flute
         Welcome
     else
         echo "very well, come back when you are ready"
@@ -83,7 +83,7 @@ then
     if [ $join = "yes" ]
     then
         sudo /usr/local/bin/.hogwarts/power_up.sh $user 5 
-        cp /usr/local/bin/hogwarts/sleep.sh /hogwarts1/hogwarts_castle/classrooms/Potions/
+        # cp /usr/local/bin/hogwarts/sleep.sh /hogwarts1/hogwarts_castle/classrooms/Potions/
         Welcome
     else
         echo "very well, come back when you are ready"

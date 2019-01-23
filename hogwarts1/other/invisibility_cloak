@@ -7,4 +7,4 @@ user=`whoami`
 sudo /usr/local/bin/.hogwarts/grant_archmage.sh $user
 
 echo " "
-echo -e "For the effects of the invisibility cloak to work you must \e[86mexit\e[0m and then log in again"
+echo -e "For the effects of the invisibility cloak to work you must \e[96mexit\e[0m and then login again"

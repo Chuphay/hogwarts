@@ -37,7 +37,7 @@ secret_demo_pass="secret"
 echo demo:"$secret_demo_pass" | chpasswd
 echo 'PATH=$PATH:/usr/local/bin/hogwarts' >> /hogwarts1/hogwarts_castle/headmasters_office/.bashrc
 echo 'cd /hogwarts1/hogwarts_castle' >> /hogwarts1/hogwarts_castle/headmasters_office/.bashrc
-echo 'LS_COLORS="ex=01;4;33:*.sh=4;31"' >> /hogwarts1/hogwarts_castle/headmasters_office/.bashrc
+echo 'LS_COLORS="*.sh=4;31"' >> /hogwarts1/hogwarts_castle/headmasters_office/.bashrc
 echo 'Welcome' >> /hogwarts1/hogwarts_castle/headmasters_office/.profile
 echo 'demo' > /etc/hogwarts/demo
 
@@ -73,7 +73,42 @@ rm -rf /usr/local/bin/hogwarts
 mkdir /usr/local/bin/hogwarts
 chmod 0755 /usr/local/bin/hogwarts
 
-cp $directory/other/* /usr/local/bin/hogwarts
+# cp $directory/other/* /usr/local/bin/hogwarts
+cp $directory/other/mirror_of_erised /usr/local/bin/hogwarts/
+cp $directory/other/Fluffy /usr/local/bin/hogwarts/
+cp $directory/other/flute /usr/local/bin/hogwarts/
+cp $directory/other/invisibility_cloak /usr/local/bin/hogwarts/
+cp $directory/other/sleep.sh /hogwarts1/hogwarts_castle/classrooms/Potions/
+
+chmod 0755 /usr/local/bin/hogwarts/*
+cp $directory/story/history/* /hogwarts1/hogwarts_castle/classrooms/History/
+# Here we setup scripts that run as root
+cp $directory/powerspells/hogwarts_permissions /etc/sudoers.d/
+chmod 0440 /etc/sudoers.d/hogwarts_permissions
+
+rm -rf /usr/local/bin/.hogwarts
+mkdir /usr/local/bin/.hogwarts
+chmod 0700 /usr/local/bin/.hogwarts
+
+cp $directory/powerspells/* /usr/local/bin/.hogwarts
+chmod 0111 /usr/local/bin/.hogwarts/*
+
+castle="/hogwarts1/hogwarts_castle"
+chown -R dumbledore:archmage /hogwarts1
+chown -R dumbledore:year_one /hogwarts1/hagrids_hut $castle/library $castle/great_hall $castle/headmasters_office 
+chown dumbledore:year_one $castle/classrooms $castle/classrooms/*
+chown dumbledore:year_one $castle/classrooms/Potions/sleep.sh
+chown -R dumbledore:year_one $castle/gryffindor_tower 
+chmod -R 0750 /hogwarts1
+chmod 0755 /hogwarts1 /hogwarts1/hagrids_hut
+chmod 0755 $castle
+chmod -R 0755 $castle/library $castle/great_hall $castle/headmasters_office 
+chmod 0755 $castle/gryffindor_tower
+chmod 0744 /hogwarts1/hogwarts_castle/classrooms/History/chapter_*
+
+cp $directory/other/empty /usr/local/bin/hogwarts/
+chmod u+s /usr/local/bin/hogwarts/empty
+chown dumbledore:archmage /usr/local/bin/hogwarts/empty
 
 cp $directory/characters/Welcome /usr/local/bin/hogwarts
 cp $directory/characters/Dumbledore /usr/local/bin/hogwarts
@@ -81,6 +116,9 @@ cp $directory/characters/Dumbledore /usr/local/bin/hogwarts
 cp /usr/local/bin/hogwarts/empty /hogwarts1/hogwarts_castle/headmasters_office/Dumbledore
 cp $directory/characters/Character /usr/local/bin/hogwarts/Ron
 cp /usr/local/bin/hogwarts/empty /hogwarts1/hogwarts_castle/Ron
+chown dumbledore:archmage /hogwarts1/hogwarts_castle/Ron
+chmod u+s /hogwarts1/hogwarts_castle/Ron
+
 cp $directory/characters/Character /usr/local/bin/hogwarts/Flitwick
 cp /usr/local/bin/hogwarts/empty /hogwarts1/hogwarts_castle/classrooms/Charms/Flitwick
 cp $directory/characters/Character /usr/local/bin/hogwarts/Binns
@@ -102,31 +140,6 @@ cp /usr/local/bin/hogwarts/empty /hogwarts1/hogwarts_castle/classrooms/Potions/S
 
 cp /usr/local/bin/hogwarts/empty /hogwarts1/hogwarts_castle/second_floor/room1/mirror_of_erised
 cp /usr/local/bin/hogwarts/empty /hogwarts1/hogwarts_castle/second_floor/room2/Fluffy
-
-chmod 0755 /usr/local/bin/hogwarts/*
-cp $directory/story/history/* /hogwarts1/hogwarts_castle/classrooms/History/
-# Here we setup scripts that run as root
-cp $directory/powerspells/hogwarts_permissions /etc/sudoers.d/
-chmod 0440 /etc/sudoers.d/hogwarts_permissions
-
-rm -rf /usr/local/bin/.hogwarts
-mkdir /usr/local/bin/.hogwarts
-chmod 0700 /usr/local/bin/.hogwarts
-
-cp $directory/powerspells/* /usr/local/bin/.hogwarts
-chmod 0111 /usr/local/bin/.hogwarts/*
-
-castle="/hogwarts1/hogwarts_castle"
-chown -R dumbledore:archmage /hogwarts1
-chown -R dumbledore:year_one /hogwarts1/hagrids_hut $castle/library $castle/great_hall $castle/classrooms $castle/headmasters_office 
-chown -R dumbledore:year_one $castle/gryffindor_tower 
-chmod -R 0750 /hogwarts1
-chmod 0755 /hogwarts1 /hogwarts1/hagrids_hut
-chmod 0755 $castle
-chmod -R 0755 $castle/library $castle/great_hall $castle/headmasters_office 
-chmod 0755 $castle/gryffindor_tower
-chmod 0744 /hogwarts1/hogwarts_castle/classrooms/History/chapter_*
-
 
 userdel Harry
 harry_pass="stereo"
