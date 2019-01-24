@@ -31,7 +31,9 @@ do
         echo 'PATH=$PATH:/usr/local/bin/hogwarts' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
         echo 'alias whereami=pwd' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
         echo 'umask 002' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
-        echo 'LS_COLORS="*.sh=4;31"' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
+        echo 'LS_COLORS="*.sh=4;31:ex=4;35:su=4;93"' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
+	echo "export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\$(pwd)\[\033[00m\]\$ '" >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
+        echo 'cd /hogwarts1/hogwarts_castle/gryffindor_tower' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
         echo 'umask 002' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.profile
         echo 'Welcome' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.profile
         # usermod -a -G year_one $uservar
