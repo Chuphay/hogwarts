@@ -43,7 +43,7 @@ then
     fi
 elif [ "$level" = "year_one 1" ]
 then
-    if [ "$(cat /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$user/my_name.txt 2>&1)" == "$user" ]
+    if [ "$(cat $location/hogwarts_castle/gryffindor_tower/dorms/$user/my_name.txt 2>&1)" == "$user" ]
     then
         echo "Congratulations! You have finished your homework!"
         sudo /usr/local/bin/.hogwarts/power_up.sh $user 2 
@@ -53,7 +53,7 @@ then
     fi
 elif [ "$level" = "year_one 2" ]
 then
-    if [ "$(cat /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$user/closet/my_name.txt 2>&1)" == "$user" ]
+    if [ "$(cat $location/hogwarts_castle/gryffindor_tower/dorms/$user/closet/my_name.txt 2>&1)" == "$user" ]
     then
         echo "Congratulations! You have finished your homework!"
         sudo /usr/local/bin/.hogwarts/power_up.sh $user 3 
@@ -69,8 +69,8 @@ then
     if [ $join = "yes" ]
     then
         sudo /usr/local/bin/.hogwarts/power_up.sh $user 4 
-        cp /usr/local/bin/hogwarts/empty /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$user/invisibility_cloak
-        cp /usr/local/bin/hogwarts/empty /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$user/flute
+        cp /usr/local/bin/hogwarts/empty $location/hogwarts_castle/gryffindor_tower/dorms/$user/invisibility_cloak
+        cp /usr/local/bin/hogwarts/empty $location/hogwarts_castle/gryffindor_tower/dorms/$user/flute
         Welcome
     else
         echo "very well, come back when you are ready"
@@ -83,7 +83,6 @@ then
     if [ $join = "yes" ]
     then
         sudo /usr/local/bin/.hogwarts/power_up.sh $user 5 
-        # cp /usr/local/bin/hogwarts/sleep.sh /hogwarts1/hogwarts_castle/classrooms/Potions/
         Welcome
     else
         echo "very well, come back when you are ready"
@@ -92,7 +91,7 @@ then
 elif [ "$level" = "year_one 5" ]
 then
  
-    if [ "$(cat /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$user/permissions.txt 2>&1)" == "user group other" ]
+    if [ "$(cat $location/hogwarts_castle/gryffindor_tower/dorms/$user/permissions.txt 2>&1)" == "user group other" ]
     then
         echo "Yay! You finished your homework"   
         sudo /usr/local/bin/.hogwarts/power_up.sh $user 6 

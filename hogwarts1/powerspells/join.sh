@@ -23,19 +23,19 @@ do
             fi
         done
 	# read -sp 'Password: ' passvar
-        useradd -m -d /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar \
+        useradd -m -d $location/hogwarts_castle/gryffindor_tower/dorms/$uservar \
              -s /bin/bash -e `date -d "2 days" +"%Y-%m-%d"` $uservar
         # chage -E `date -d "30 days" +"%Y-%m-%d"` $uservar
         echo $uservar:"$password" | chpasswd
         #touch /magical_world/hogwarts/dorms/$uservar/.bashrc
-        echo 'PATH=$PATH:/usr/local/bin/hogwarts' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
-        echo 'alias whereami=pwd' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
-        echo 'umask 002' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
-        echo 'LS_COLORS="*.sh=4;31:ex=4;35:su=4;93"' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
-	echo "export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\$(pwd)\[\033[00m\]\$ '" >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
-        echo 'cd /hogwarts1/hogwarts_castle/gryffindor_tower' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
-        echo 'umask 002' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.profile
-        echo 'Welcome' >> /hogwarts1/hogwarts_castle/gryffindor_tower/dorms/$uservar/.profile
+        echo 'PATH=$PATH:/usr/local/bin/hogwarts' >> $location/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
+        echo 'alias whereami=pwd' >> $location/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
+        echo 'umask 002' >> $location/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
+        echo 'LS_COLORS="*.sh=4;31:ex=4;35:su=4;93"' >> $location/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
+	echo "export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\$(pwd)\[\033[00m\]\$ '" >> $location/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
+        echo "cd $location/hogwarts_castle/gryffindor_tower" >> $location/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
+        echo 'umask 002' >> $location/hogwarts_castle/gryffindor_tower/dorms/$uservar/.profile
+        echo 'Welcome' >> $location/hogwarts_castle/gryffindor_tower/dorms/$uservar/.profile
         # usermod -a -G year_one $uservar
         usermod -g year_one $uservar
         usermod -a -G $uservar $uservar

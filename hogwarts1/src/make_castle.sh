@@ -1,8 +1,8 @@
 #!/bin/bash
 
-mkdir /hogwarts1
-mkdir /hogwarts1/hogwarts_castle
-cd /hogwarts1
+mkdir $location
+mkdir $location/hogwarts_castle
+cd $location
 mkdir hagrids_hut
 cd hogwarts_castle
 mkdir gryffindor_tower
