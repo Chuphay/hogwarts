@@ -1,13 +1,31 @@
-Potions
-Is not
-A game.
+Last week 
+you learned 
+how to 
+consume
+a potion.
 
-You
-Are
-Too young 
-To learn it.
+This week
+let us learn 
+how to examine 
+the ingredients
+in a potion.
 
-Deduct 
-50 points
-From 
-Gryffindor.
+\e[96mnano\e[0m is
+the name of 
+our most basic
+noob friendly
+cauldron.
+
+Before, using \e[96mnano\e[0m
+because you are such a dunderhead
+I must teach you how to exit.
+
+Press \e[96m<ctrl> + x\e[0m,
+Yes that means 
+press the ctrl key and the 
+x button at the same time.
+
+Try this now:
+
+$ \e[95mnano sleep.sh\e[0m
+

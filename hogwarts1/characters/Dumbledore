@@ -103,8 +103,14 @@ then
     # sudo /usr/local/bin/.hogwarts/power_up.sh $user 6 
 elif [ "$level" = "year_one 6" ]
 then
-    echo "YEAR ONE 6!!!!!"
-    sudo /usr/local/bin/.hogwarts/power_up.sh $user 7 
+    
+    if [ "$(ls -l $location/hogwarts_castle/gryffindor_tower/dorms/$user/my_permissions.txt | awk '{print $4}')" == "first_year" ]
+    then
+        echo "Yay! You finished your homework"
+        sudo /usr/local/bin/.hogwarts/power_up.sh $user 7 
+    else
+        echo "Your homework was to create a file called my_permissions.txt in your dorm with the group set to year_one"
+    fi
 elif [ "$level" = "year_one 7" ]
 then
     echo "YEAR ONE 7!!!!!"

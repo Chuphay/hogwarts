@@ -1,1 +1,14 @@
-[5mDefault text... [31mprobably an error[0m
+Last week we learned about adding several spells to the background and viewing them using the rune \e[96m&\e[0m to place a spell in the background, and \e[96mjobs\e[0m to view them.
+
+But what if you forgot to use the \e[96m&\e[0m rune when you cast a spell. Is there a way to then subsequently move it to the background? 
+
+Naturally there is, we use the special command \e[96m<ctrl> + z\e[0m , yes that means press the control key while pressing z. This detaches and stops a spell. to move that spell to the background, use\e[96mbg\e[0m. Then to bring it back to the fg, use \e[96mfg\e[0m.
+
+Let's try it out:
+
+$ \e[95msleep 100\e[0m
+$ \e[95m<ctrl> + z\e[0m
+$ \e[95mbg\e[0m
+$ \e[95mjobs\e[0m
+$ \e[95mfg\e[0m
+$ \e[95m<ctrl> + c\e[0m  

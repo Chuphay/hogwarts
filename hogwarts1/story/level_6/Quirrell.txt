@@ -1,1 +1,18 @@
-[5mDefault text... [31mprobably an error[0m
+L-l-last time we learned how to k-k-kill a spell by using \e[96m<ctrl> + c\e[0m.
+
+This w-w-works well when you are actively casting a spell and something went wrong.
+
+HOwever, often times, you will want to kill spells that are in the background, with the \e[96mkill\e[0m invocation. Try this:
+
+$ \e[95msleep 10 &\e[0m
+$ \e[95mjobs\e[0m
+$ \e[95mkill %1\e[0m
+
+Or you can even be choosy about, what tot kill, like this:
+
+$ \e[95msleep 35 &\e[0m
+$ \e[95msleep 30 &\e[0m
+$ \e[95msleep 25 &\e[0m
+$ \e[95mjobs\e[0m
+$ \e[95mkill %2\e[0m
+$ \e[95mjobs\e[0m
