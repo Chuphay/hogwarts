@@ -113,8 +113,14 @@ then
     fi
 elif [ "$level" = "year_one 7" ]
 then
-    echo "YEAR ONE 7!!!!!"
-    sudo /usr/local/bin/.hogwarts/power_up.sh $user 8 
+    if [ "$(ls -l $location/hogwarts_castle/gryffindor_tower/dorms/$user/sleep.sh | awk 'NF > 1' 2>&1)" == "sleep 2" ]
+    then
+        echo "Yay! You finished your homework"
+        sudo /usr/local/bin/.hogwarts/power_up.sh $user 8 
+    else
+       
+        echo -e "$(cat /usr/local/src/hogwarts1/level_7/Dumbledore.txt)"
+    fi
 elif [ "$level" = "year_one 8" ]
 then
     echo "YEAR ONE 8!!!!!"

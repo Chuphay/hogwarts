@@ -1,1 +1,14 @@
-[5mDefault text... [31mprobably an error[0m
+Last time, I told ya about tab completion. Pretty useful right?
+
+Another really useful shortcut, is using the up and down arrows.
+This allows you to scroll through your history, to re-use old spells
+
+For example try:
+
+$ \e[95mecho hello\e[0m
+
+Then press the up key, to see that spell become re-usable.
+
+If you keep pressing up, you can go further back into the history of the spells you have casted. Pressing down, will reverse this process.
+
+Have fun and practice!
