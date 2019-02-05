@@ -36,9 +36,9 @@ do
         echo "cd $location/hogwarts_castle/gryffindor_tower" >> $location/hogwarts_castle/gryffindor_tower/dorms/$uservar/.bashrc
         echo 'umask 002' >> $location/hogwarts_castle/gryffindor_tower/dorms/$uservar/.profile
         echo 'Welcome' >> $location/hogwarts_castle/gryffindor_tower/dorms/$uservar/.profile
-        # usermod -a -G year_one $uservar
-        usermod -g year_one $uservar
-        usermod -a -G $uservar $uservar
+        usermod -a -G year_one $uservar
+        # usermod -g year_one $uservar
+        # usermod -a -G $uservar $uservar
         echo "year_one 0" > /etc/hogwarts/$uservar
         echo -e "You are all setup! Please re-log into hogwarts by using the following command: \e[96mssh $uservar@hogwarts.ai\e[0m"
         break

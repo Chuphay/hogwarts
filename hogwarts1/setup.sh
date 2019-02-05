@@ -62,6 +62,7 @@ mkdir /usr/local/bin/hogwarts
 chmod 0755 /usr/local/bin/hogwarts
 
 # cp $directory/other/* /usr/local/bin/hogwarts
+cp $directory/other/empty /usr/local/bin/hogwarts
 cp $directory/other/mirror_of_erised /usr/local/bin/hogwarts/
 cp $directory/other/Fluffy /usr/local/bin/hogwarts/
 cp $directory/other/flute /usr/local/bin/hogwarts/
@@ -69,6 +70,7 @@ cp $directory/other/invisibility_cloak /usr/local/bin/hogwarts/
 cp $directory/other/sleep.sh $location/hogwarts_castle/classrooms/Potions/
 
 chmod 0755 /usr/local/bin/hogwarts/*
+chmod u+s /usr/local/bin/hogwarts/empty
 cp $directory/story/history/* $location/hogwarts_castle/classrooms/History/
 # Here we setup scripts that run as root
 cp $directory/powerspells/hogwarts_permissions /etc/sudoers.d/

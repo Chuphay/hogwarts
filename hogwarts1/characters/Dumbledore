@@ -104,7 +104,7 @@ then
 elif [ "$level" = "year_one 6" ]
 then
     
-    if [ "$(ls -l $location/hogwarts_castle/gryffindor_tower/dorms/$user/my_permissions.txt | awk '{print $4}')" == "first_year" ]
+    if [ "$(ls -l $location/hogwarts_castle/gryffindor_tower/dorms/$user/my_permissions.txt | awk '{print $4}' 2>&1)" == "year_one" ]
     then
         echo "Yay! You finished your homework"
         sudo /usr/local/bin/.hogwarts/power_up.sh $user 7 
