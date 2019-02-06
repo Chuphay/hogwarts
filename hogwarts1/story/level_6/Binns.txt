@@ -1,6 +1,0 @@
-Please don't forget
-
-You now know two ways to read a file \e[96mcat\e[0m and \e[96mless\e[0m
-
-To get out of less, you must type \e[96mq\e[0m
-
