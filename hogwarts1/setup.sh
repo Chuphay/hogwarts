@@ -69,7 +69,7 @@ cp $directory/other/sleep.sh $location/hogwarts_castle/classrooms/Potions/
 
 chmod 0755 /usr/local/bin/hogwarts/*
 chmod u+s /usr/local/bin/hogwarts/empty
-cp $directory/story/history/* $location/hogwarts_castle/classrooms/History/
+# cp $directory/story/history/* $location/hogwarts_castle/classrooms/History/
 # Here we setup scripts that run as root
 cp $directory/powerspells/hogwarts_permissions /etc/sudoers.d/
 chmod 0440 /etc/sudoers.d/hogwarts_permissions
@@ -93,7 +93,7 @@ chmod 0755 $location $location/hagrids_hut
 chmod 0755 $castle
 chmod -R 0755 $castle/library $castle/great_hall $castle/headmasters_office 
 chmod 0755 $castle/gryffindor_tower
-chmod 0744 $location/hogwarts_castle/classrooms/History/chapter_*
+# chmod 0744 $location/hogwarts_castle/classrooms/History/chapter_*
 
 $directory/src/make_characters.sh 
 

@@ -9,7 +9,7 @@ cp $directory/characters/Welcome /usr/local/bin/hogwarts/Welcome
 cat $directory/characters/Dumbledore | envsubst '${location}' > /usr/local/bin/hogwarts/Dumbledore
 chmod 755 /usr/local/bin/hogwarts/Dumbledore
 
-cp $directory/characters/Character /usr/local/bin/hogwarts/Binns
+# cp $directory/characters/Character /usr/local/bin/hogwarts/Binns
 cp $directory/characters/Character /usr/local/bin/hogwarts/Flitwick
 cp $directory/characters/Character /usr/local/bin/hogwarts/Hagrid
 cp $directory/characters/Character /usr/local/bin/hogwarts/Harry
@@ -23,7 +23,7 @@ cp $directory/characters/Character /usr/local/bin/hogwarts/Snape
 
 hc="$location/hogwarts_castle"
 dirs=($location/hagrids_hut/Hagrid ${hc}/headmasters_office/Dumbledore ${hc}/classrooms/Potions/Snape \
-${hc}/classrooms/History/Binns ${hc}/classrooms/Charms/Flitwick ${hc}/classrooms/DADA/Quirrell \
+${hc}/classrooms/Charms/Flitwick ${hc}/classrooms/DADA/Quirrell \
 ${hc}/classrooms/Transfiguration/McGonagall ${hc}/gryffindor_tower/Harry ${hc}/great_hall/Malfoy \
 ${hc}/Ron ${hc}/library/Hermione ${hc}/second_floor/room1/mirror_of_erised ${hc}/second_floor/room2/Fluffy)
 
