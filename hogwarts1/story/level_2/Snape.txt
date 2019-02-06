@@ -1,13 +1,10 @@
-Potions
-Is not
-A game.
+You have now learned two ways to view a file: \e[96mcat\e[0m and \e[96mless\e[0m. 
 
-You
-Are
-Too young 
-To learn it.
+\e[96mcat\e[0m has the benefit of being simple and quick. \e[96mless\e[0m lets you view large files, but can be a little cumbersome.
 
-Deduct 
-50 points
-From 
-Gryffindor.
+A good in between are the dual commands \e[96mhead\e[0m and \e[96mtail\e[0m which lets you view the head and tail of a potion, respectively.
+
+Try this (and then deduct 50 points from Gryffindor)
+
+$ \e[95mhead long_potion.pl\e[0m
+$ \e[95mtail long_potion.pl\e[0m
