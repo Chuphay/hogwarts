@@ -67,6 +67,8 @@ cp $directory/other/flute /usr/local/bin/hogwarts/
 cp $directory/other/invisibility_cloak /usr/local/bin/hogwarts/
 cp $directory/other/sleep.sh $location/hogwarts_castle/classrooms/Potions/
 
+cp $directory/other/long_potion.pl $location/hogwarts_castle/classrooms/Potions/
+
 chmod 0755 /usr/local/bin/hogwarts/*
 chmod u+s /usr/local/bin/hogwarts/empty
 # cp $directory/story/history/* $location/hogwarts_castle/classrooms/History/
