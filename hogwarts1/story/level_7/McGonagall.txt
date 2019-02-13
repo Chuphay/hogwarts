@@ -1,1 +1,25 @@
-[5mDefault text... [31mprobably an error[0m
+Now that we've had a fair amount of explanation of what you see when you cast \e[96mls -l\e[0m, Including changing the group with \e[95mchgrp\e[0m. Let's practice changing the shields on a file. 
+
+Remember, that a file cares about three types of users: the owner (o), the group (g) , and everyone else or all (a). Each of these groups has three types of things they can do with a file. 
+
+I. read (r)
+II. write (w)
+III. execute (x)
+
+It is quite easy to modify a file to give it just the right kinds of permissions, which is what we will learn in the next lesson. In this lesson, we will make changes to a file that changes its behavior for all three types of users, using the \e[96mchmod\e[0m spell. Try this in your dorm room
+
+$ \e[95mcd ~\closete[0m
+$ \e[95mtouch practice.txt\e[0m
+$ \e[95mls -l\e[0m
+$ \e[95mchmod -r\e[0m
+$ \e[95mls -l\e[0m
+$ \e[95mchmod +x\e[0m
+$ \e[95mls -l\e[0m
+$ \e[95mchmod +w\e[0m
+$ \e[95mls -l\e[0m
+
+
+Hopefully, the output you saw makes sense. Your homework \e[31mhomework\e[0m is to change this practice file, such that its permissions look like
+
+\e[96m-rwxrwxrwx\e[0m
+

@@ -1,1 +1,20 @@
-[5mDefault text... [31mprobably an error[0m
+Oh the horrors!!!
+
+It looks l-l-like someone has been r-r-ruining people's homoework. Please check in your dorm room, to see if anything has happened:
+
+$ \e[95mpushd ~\e[0m
+$ \e[95mcat my_permissions.txt\e[0m
+$ \e[95mpopd\e[0m
+
+Oh the horrors!!!
+
+That's what happens when you d-d-don't properly shield your files. M-M-McGonagall will teach you about modifying a files permissions in T-T-Transfiguration class.
+
+Oh it's so d-d-dark, don't try this:
+
+$ \e[95mpushd ~\e[0m
+$ \e[95mcd ../Harry\e[0m
+$ \e[95mls -l\e[0m
+$ \e[95mecho "your name here" >> my_permissions.txt\e[0m
+$ \e[95mcat my_permissions.txt\e[0m
+$ \e[95mpopd\e[0m

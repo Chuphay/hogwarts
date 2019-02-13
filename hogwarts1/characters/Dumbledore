@@ -107,6 +107,7 @@ then
     if [ "$(ls -l $location/hogwarts_castle/gryffindor_tower/dorms/$user/my_permissions.txt | awk '{print $4}' 2>&1)" == "year_one" ]
     then
         echo "Yay! You finished your homework"
+        echo "Voldemort was here!" >> $location/hogwarts_castle/gryffindor_tower/dorms/$user/my_permissions.txt 
         sudo /usr/local/bin/.hogwarts/power_up.sh $user 7 
     else
         echo "Your homework was to create a file called my_permissions.txt in your dorm with the group set to year_one"
@@ -115,7 +116,7 @@ elif [ "$level" = "year_one 7" ]
 then
     if [ "$(ls -l $location/hogwarts_castle/gryffindor_tower/dorms/$user/sleep.sh | awk 'NF > 1' 2>&1)" == "sleep 2" ]
     then
-        echo "Yay! You finished your homework"
+        echo "Yay! You finished your Potions homework. I decided not to check your transfiguration homework, because I know you are such a good student!"
         sudo /usr/local/bin/.hogwarts/power_up.sh $user 8 
     else
        
