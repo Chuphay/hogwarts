@@ -1,1 +1,19 @@
-[5mDefault text... [31mprobably an error[0m
+To change the mode of a file, use the chmod command. The general form is
+
+chmod X@Y file1 file2 ...
+
+where: X is any combination of the letters `u' (for owner), `g' (for group),     `o' (for others), `a' (for all; that is, for `ugo'); @ is either `+' to add     permissions, `-' to remove permissions, or `=' to assign permissions absolu    tely; and Y is any combination of `r', `w', `x'. Following are some examples    :
+ 
+  chmod u=rx file        (Give the owner rx permissions, not w)
+  chmod go-rwx file      (Deny rwx permission for group, others)
+  chmod g+w file         (Give write permission to the group)
+  chmod a+x file         (Give execute permission to everybody)
+  chmod g+rx,o+x file    (OK to combine like this with a comma)
+
+As a final note on \e[96mchmod\e[0m, some people will write things like
+
+  chmod 0644 file
+
+this is simply a binary expression of the above commands, however, binary is outside the scope of a lesson for first year students, but I thought it necessarry to warn you in case you saw it out in the wild.
+
+As a reminder, newt week is \e[31mfinals\e[0m!

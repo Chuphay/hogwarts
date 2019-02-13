@@ -1,1 +1,19 @@
-[5mDefault text... [31mprobably an error[0m
+Next week is will be finals. And while some of the other teachers may be teaching you some things that you will need for the test, I wanted to take this time to have a little fun and show you one spell that can you show you the joy of charm work.
+
+Try this:
+
+$ \e[95mcurl wttr.in/~Kilimanjaro\e[0m
+
+And to get your own personal weather try:
+
+$ \e[95mcurl wttr.in/London\e[0m
+
+but obviously with the name of your city in place of London.
+
+For me personally, I usually don't need the weather for more than one day, so I usually use:
+
+$ \e[95mcurl wttr.in/London?1\e[0m
+
+Hope you had fun with that!
+
+Next week will be \e[31mfinals\e[0m! 
