@@ -9,6 +9,7 @@ export location="/hogwarts2"
 
 export directory=`pwd`
 # For testing purposes
+groupadd year_one  #scary stuff happens if we skip this
 for user in `${directory}/src/get_group.sh year_one`
 do
     echo deleting:"${user}":done
