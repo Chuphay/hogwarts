@@ -1,14 +1,3 @@
-To change the mode of a file, use the chmod command. The general form is
-
-      chmod X@Y file1 file2 ...
-where: X is any combination of the letters `u' (for owner), `g' (for group), `o' (for others), `a' (for all; that is, for `ugo'); @ is either `+' to add permissions, `-' to remove permissions, or `=' to assign permissions absolutely; and Y is any combination of `r', `w', `x'. Following are some examples:
-
-     chmod u=rx file        (Give the owner rx permissions, not w)
-     chmod go-rwx file      (Deny rwx permission for group, others)
-     chmod g+w file         (Give write permission to the group)
-     chmod a+x file1 file2  (Give execute permission to everybody)
-     chmod g+rx,o+x file    (OK to combine like this with a comma)
-
 "You are here to learn the subtle science and exact art of potion making," he began. He scanned the faces before them, his heart clenching slightly as he recalled a few of their deaths.
 
 He cleared his throat, somehow managing to look sternly at them all. "Since there is no foolish wand waving here, most of you will find it hard to believe this is magic. As such, I don't expect many of you will understand the beauty of softly simmering cauldrons with their shimmering fumes or the delicate power of liquids that creep through human veins with the ability to either save or take a life. . . . I can teach you how to bottle fame, brew glory, and even . . . put a stopper in death. The only question is . . . are you a lazy good for nothing dunderhead, or are you willing and capable of learning one of the strongest magicks in existence?"
