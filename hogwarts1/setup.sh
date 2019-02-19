@@ -90,6 +90,7 @@ chown -R dumbledore:archmage $location
 chown -R dumbledore:year_one $location/hagrids_hut $castle/library $castle/great_hall $castle/headmasters_office 
 chown dumbledore:year_one $castle/classrooms $castle/classrooms/*
 chown dumbledore:year_one $castle/classrooms/Potions/sleep.sh
+chown dumbledore:year_one $castle/classrooms/Potions/long_potion.pl
 chown -R dumbledore:year_one $castle/gryffindor_tower 
 chmod -R 0750 $location
 chmod 0755 $location $location/hagrids_hut
