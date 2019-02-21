@@ -61,13 +61,13 @@ mkdir /usr/local/bin/hogwarts
 chmod 0755 /usr/local/bin/hogwarts
 
 # cp $directory/other/* /usr/local/bin/hogwarts
-cp $directory/other/empty /usr/local/bin/hogwarts
+cp $directory/other/multiple.sh /usr/local/bin/hogwarts/
+cp $directory/other/empty /usr/local/bin/hogwarts/
 cp $directory/other/mirror_of_erised /usr/local/bin/hogwarts/
 cp $directory/other/Fluffy /usr/local/bin/hogwarts/
 cp $directory/other/flute /usr/local/bin/hogwarts/
 cp $directory/other/invisibility_cloak /usr/local/bin/hogwarts/
 cp $directory/other/sleep.sh $location/hogwarts_castle/classrooms/Potions/
-
 cp $directory/other/long_potion.pl $location/hogwarts_castle/classrooms/Potions/
 
 chmod 0755 /usr/local/bin/hogwarts/*

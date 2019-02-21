@@ -114,7 +114,7 @@ then
     fi
 elif [ "$level" = "year_one 7" ]
 then
-    if [ "$(ls -l $location/hogwarts_castle/gryffindor_tower/dorms/$user/sleep.sh | awk 'NF > 1' 2>&1)" == "sleep 2" ]
+    if [ "$(cat $location/hogwarts_castle/gryffindor_tower/dorms/$user/sleep.sh | awk 'NF > 1' 2>&1)" == "sleep 2" ]
     then
         echo "Yay! You finished your Potions homework. I decided not to check your transfiguration homework, because I know you are such a good student!"
         sudo /usr/local/bin/.hogwarts/power_up.sh $user 8 
