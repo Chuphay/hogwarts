@@ -22,6 +22,7 @@ rm -rf /usr/local/bin/.hogwarts
 # Delete accounts and groups
 userdel demo
 userdel dumbledore
+userdel Harry
 delgroup archmage
 delgroup year_one
 

@@ -32,43 +32,24 @@ if id "demo" >/dev/null 2>&1; then
   echo "demo account already exists, assuming all accounts are setup"
 else
   echo "creating accounts and groups"
-  useradd -m -d $location/hogwarts_castle/headmasters_office -s /bin/bash demo
-  secret_demo_pass="secret"
-  echo demo:"$secret_demo_pass" | chpasswd
-  echo 'PATH=$PATH:/usr/local/bin/hogwarts' >> $location/hogwarts_castle/headmasters_office/.bashrc
-  echo 'LS_COLORS="*.sh=4;31:ex=4;35:su=4;93"' >> $location/hogwarts_castle/headmasters_office/.bashrc
-  echo "export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\$(pwd)\[\033[00m\]\$ '" >> $location/hogwarts_castle/headmasters_office/.bashrc
-  echo "cd $location/hogwarts_castle" >> $location/hogwarts_castle/headmasters_office/.bashrc
-  echo 'Welcome' >> $location/hogwarts_castle/headmasters_office/.profile
-  echo 'demo' > /etc/hogwarts/demo
-
-  useradd -r dumbledore
-
-  groupadd archmage
-  # usermod -a -G archmage dumbledore
-
-  groupadd year_one 
-
+  $directory/src/create_users_groups.sh
 fi
-
-
 
 #Here we setup all the characters in the world
 mkdir -p /usr/local/bin/hogwarts
 chmod 0755 /usr/local/bin/hogwarts
 
-# cp $directory/other/* /usr/local/bin/hogwarts
-cp $directory/other/multiple.sh /usr/local/bin/hogwarts/
-cp $directory/other/empty /usr/local/bin/hogwarts/
-cp $directory/other/mirror_of_erised /usr/local/bin/hogwarts/
-cp $directory/other/Fluffy /usr/local/bin/hogwarts/
-cp $directory/other/flute /usr/local/bin/hogwarts/
-cp $directory/other/invisibility_cloak /usr/local/bin/hogwarts/
-cp $directory/other/sleep.sh $location/hogwarts_castle/classrooms/Potions/
-cp $directory/other/long_potion.pl $location/hogwarts_castle/classrooms/Potions/
+# cp $directory/other/multiple.sh /usr/local/bin/hogwarts/
+# cp $directory/other/empty /usr/local/bin/hogwarts/
+# cp $directory/other/mirror_of_erised /usr/local/bin/hogwarts/
+# cp $directory/other/Fluffy /usr/local/bin/hogwarts/
+# cp $directory/other/flute /usr/local/bin/hogwarts/
+# cp $directory/other/invisibility_cloak /usr/local/bin/hogwarts/
+# cp $directory/other/sleep.sh $location/hogwarts_castle/classrooms/Potions/
+# cp $directory/other/long_potion.pl $location/hogwarts_castle/classrooms/Potions/
 
-chmod 0755 /usr/local/bin/hogwarts/*
-chmod u+s /usr/local/bin/hogwarts/empty
+# chmod 0755 /usr/local/bin/hogwarts/*
+# chmod u+s /usr/local/bin/hogwarts/empty
 
 # Here we setup scripts that run as root
 cp $directory/powerspells/hogwarts_permissions /etc/sudoers.d/
@@ -85,8 +66,6 @@ castle="$location/hogwarts_castle"
 chown -R dumbledore:archmage $location
 chown -R dumbledore:year_one $location/hagrids_hut $castle/library $castle/great_hall $castle/headmasters_office 
 chown dumbledore:year_one $castle/classrooms $castle/classrooms/*
-chown dumbledore:year_one $castle/classrooms/Potions/sleep.sh
-chown dumbledore:year_one $castle/classrooms/Potions/long_potion.pl
 chown -R dumbledore:year_one $castle/gryffindor_tower 
 chmod -R 0750 $location
 chmod 0755 $location $location/hagrids_hut
@@ -96,12 +75,7 @@ chmod 0755 $castle/gryffindor_tower
 # chmod 0744 $location/hogwarts_castle/classrooms/History/chapter_*
 
 $directory/src/make_characters.sh 
+chown dumbledore:year_one $castle/classrooms/Potions/sleep.sh
+chown dumbledore:year_one $castle/classrooms/Potions/long_potion.pl
 
-userdel Harry
-harry_pass="stereo"
-useradd -m -d $location/hogwarts_castle/gryffindor_tower/dorms/Harry Harry
-echo Harry:"$harry_pass" | chpasswd
-echo "user group other" > $location/hogwarts_castle/gryffindor_tower/dorms/Harry/permissions.txt
-chown Harry $location/hogwarts_castle/gryffindor_tower/dorms/Harry/permissions.txt
-chgrp year_one $location/hogwarts_castle/gryffindor_tower/dorms/Harry/permissions.txt
-chmod 664 $location/hogwarts_castle/gryffindor_tower/dorms/Harry/permissions.txt
+
