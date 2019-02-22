@@ -1,20 +1,20 @@
 #!/bin/bash
-# cp $directory/other/* /usr/local/bin/hogwarts
-cp $directory/other/multiple.sh /usr/local/bin/hogwarts/
-cp $directory/other/empty /usr/local/bin/hogwarts/
-cp $directory/other/mirror_of_erised /usr/local/bin/hogwarts/
-cp $directory/other/Fluffy /usr/local/bin/hogwarts/
-cp $directory/other/flute /usr/local/bin/hogwarts/
-cp $directory/other/invisibility_cloak /usr/local/bin/hogwarts/
-cp $directory/other/sleep.sh $location/hogwarts_castle/classrooms/Potions/
-cp $directory/other/long_potion.pl $location/hogwarts_castle/classrooms/Potions/
+# cp $directory/src/* /usr/local/bin/hogwarts
+cp $directory/src/multiple.sh /usr/local/bin/hogwarts/
+cp $directory/src/empty /usr/local/bin/hogwarts/
+cp $directory/src/mirror_of_erised /usr/local/bin/hogwarts/
+cp $directory/src/Fluffy /usr/local/bin/hogwarts/
+cp $directory/src/flute /usr/local/bin/hogwarts/
+cp $directory/src/invisibility_cloak /usr/local/bin/hogwarts/
+cp $directory/src/sleep.sh $location/hogwarts_castle/classrooms/Potions/
+cp $directory/src/long_potion.pl $location/hogwarts_castle/classrooms/Potions/
 chmod 0755 /usr/local/bin/hogwarts/*
 chmod u+s /usr/local/bin/hogwarts/empty
 
 
 # directory=$1
 
-# cp $directory/other/empty /usr/local/bin/hogwarts/
+# cp $directory/src/empty /usr/local/bin/hogwarts/
 
 cp $directory/characters/Welcome /usr/local/bin/hogwarts/Welcome
 # cp $directory/characters/Dumbledore /usr/local/bin/hogwarts/Dumbledore
@@ -43,7 +43,7 @@ ${hc}/Ron ${hc}/library/Hermione ${hc}/second_floor/room1/mirror_of_erised ${hc}
 for dir in "${dirs[@]}"
 do
     # echo $dir
-    cp $directory/other/empty $dir
+    cp $directory/src/empty $dir
     chown dumbledore:archmage $dir
     chmod u+s $dir
 done
