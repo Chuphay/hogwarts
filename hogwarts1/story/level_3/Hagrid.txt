@@ -1,15 +1,20 @@
-Hi there,
+Hello there
 
-Hope you have been practicing using the full path to change directories with your wand, using the command \e[96mcd path/to/directory\e[0m.
+Have you been practicing those wand movements I taught you?
 
-I really miss my wand.
+\e[96mcd ~\e[0m to quickly go back to your dorm room
 
-When I use to have one, one of my favorite tricks was to pop in and out of a room. The way we do that is by using \e[96mpushd\e[0m to go into a directory and \e[96mpopd\e[0m to pop out.
+and
 
-Try this:
+\e[96mcd ../../..\e[0m to exit multiple rooms at once.
+
+They will help you move around the castle quickly.
+
+Another wand movement that will help you quickly move around can only be used when you concentrate really hard on where you want to go.
+
+Suppose you are in your dorm room and you want to quickly come and visit me. Since you know where I live, you can type the exact path to my hut. Try this:
 
 $ \e[95mcd ~\e[0m
-$ \e[95mpushd /hogwarts1/hagrids_hut\e[0m
-$ \e[95mwhereami\e[0m
-$ \e[95mpopd\e[0m
-$ \e[95mwhereami\e[0m
+$ \e[95mcd /hogwarts1/hagrids_hut\e[0m
+
+Hope that helps you navigate around the castle more quickly

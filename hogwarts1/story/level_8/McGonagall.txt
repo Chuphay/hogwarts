@@ -1,19 +1,25 @@
-To change the mode of a file, use the chmod command. The general form is
+Now that we've had a fair amount of explanation of what you see when you cast \e[96mls -l\e[0m, Including changing the group with \e[95mchgrp\e[0m. Let's practice changing the shields on a file. 
 
-chmod X@Y file1 file2 ...
+Remember, that a file cares about three types of users: the owner (o), the group (g) , and everyone else or all (a). Each of these groups has three types of things they can do with a file. 
 
-where: X is any combination of the letters `u' (for owner), `g' (for group),     `o' (for others), `a' (for all; that is, for `ugo'); @ is either `+' to add     permissions, `-' to remove permissions, or `=' to assign permissions absolu    tely; and Y is any combination of `r', `w', `x'. Following are some examples    :
- 
-  chmod u=rx file        (Give the owner rx permissions, not w)
-  chmod go-rwx file      (Deny rwx permission for group, others)
-  chmod g+w file         (Give write permission to the group)
-  chmod a+x file         (Give execute permission to everybody)
-  chmod g+rx,o+x file    (OK to combine like this with a comma)
+I. read (r)
+II. write (w)
+III. execute (x)
 
-As a final note on \e[96mchmod\e[0m, some people will write things like
+It is quite easy to modify a file to give it just the right kinds of permissions, which is what we will learn in the next lesson. In this lesson, we will make changes to a file that changes its behavior for all three types of users, using the \e[96mchmod\e[0m spell. Try this in your dorm room
 
-  chmod 0644 file
+$ \e[95mcd ~\closete[0m
+$ \e[95mtouch practice.txt\e[0m
+$ \e[95mls -l\e[0m
+$ \e[95mchmod -r\e[0m
+$ \e[95mls -l\e[0m
+$ \e[95mchmod +x\e[0m
+$ \e[95mls -l\e[0m
+$ \e[95mchmod +w\e[0m
+$ \e[95mls -l\e[0m
 
-this is simply a binary expression of the above commands, however, binary is outside the scope of a lesson for first year students, but I thought it necessarry to warn you in case you saw it out in the wild.
 
-As a reminder, newt week is \e[31mfinals\e[0m!
+Hopefully, the output you saw makes sense. Your homework \e[31mhomework\e[0m is to change this practice file, such that its permissions look like
+
+\e[96m-rwxrwxrwx\e[0m
+

@@ -1,11 +1,13 @@
-Christmas.
+There are many types of magic...
+Do this:
 
-I 
-hate it.
+$ \e[95mhead sleep.sh\e[0m
+$ \e[95mhead long_potion.pl\e[0m
 
-You 
-should 
-be studying.
+Notice that both potions start with the rune \e[96m#!\e[0m.
 
-50 points
-from Gryffindor!
+This is called the "She-bang". "She" is pronounced with a soft e.
+
+The She-bang tells your wand what type of magic to use and where this magic can be found. In the case of sleep.sh, the magic being used is called \e[96mbash\e[0m. In the case of long_potion.pl, the magic being used is something called \e[96mperl\e[0m.
+
+At Hogwarts, we will only be concerned with bash, but it is important to know that there are other types of magic out there. You have already seen two, some of the other famous ones are, \e[96mpython\e[0m, \e[96mC++\e[0m, \e[96mjavascript\e[0m, and many others besides.

@@ -1,34 +1,31 @@
-Last week
-You examined
-the potion \e[96msleep.sh\e[0m
-with your first cauldron \e[96mnano\e[0m
+Last week 
+you learned 
+how to 
+consume
+a potion.
 
-This week, you will attempt to modify
-the potion, to create your own.
-This is your \e[31mhomework\e[0m!
-I doubt you will be able to finish
+This week
+let us learn 
+how to examine 
+the ingredients
+in a potion.
 
-As you may be aware
-you can only modify things in
-your own dorm.
+\e[96mnano\e[0m is
+the name of 
+our most basic
+noob friendly
+cauldron.
 
-Thefore, you must 
-copy this potion
-to your dorm room.
-Then modify it to sleep 
-for only 2 seconds.
+Before, using \e[96mnano\e[0m
+because you are such a dunderhead
+I must teach you how to exit.
 
-Remember, to exit (and to save)
-in \e[96mnano\e[0m 
-you must
-use \e[96m<ctrl> + x\e[0m
-and then follow the directions to save.
+Press \e[96m<ctrl> + x\e[0m,
+Yes that means 
+press the ctrl key and the 
+x button at the same time.
 
-Try this:
+Try this now:
 
-$ \e[95mcp sleep.sh ~\ \e[0m
-$ \e[95mcd ~\e[0m
 $ \e[95mnano sleep.sh\e[0m
-
-Then modify the potion to sleep for 2 seconds.
 

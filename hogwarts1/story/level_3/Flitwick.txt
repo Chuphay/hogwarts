@@ -1,20 +1,25 @@
-Welcome to charms.
+Today you will learn two new spells and I will give you some \e[31mhomework\e[0m.
 
-Today we are going to learn a really cool spell called \e[96msleep\e[0m
+The first new spell is to create a new room (make a new directory) with the following invocation \e[96mmkdir\e[0m
 
-Try it:
+As usual, most spells need a target. In this case, the target is the name of the new room.
 
-$ \e[95msleep 5\e[0m
+Try this in your dorm room
 
-Pretty cool, right?
+$ \[e95mcd ~\e[0m
+$ \[e95mmkdir closet\e[0m
+$ \e[95mcd closet\e[0m
 
-But notice how you can't do anything for ten seconds? There's a way to make a spell work in the background, so that you can cast other spells and that's with the \e[96m&\e[0m rune.
+The second spell is \e[96mmv\e[0m which will move a file to a new location. Try this in your dorm room:
 
-Try this 
+$ \e[95mcd ~\e[0m
+$ \e[95mtouch new_file.txt\e[0m
+$ \e[95ls\e[0m
+$ \e[95mmv new_file.txt much_better_name\e[0m
+$ \e[95mls\e[0m
+$ \e[95mmv much_better_name closet/best_name_ever.txt\e[0m
 
-$ \e[95msleep 20 &\e[0m
+It should be pointed out, and we will get back to this more in the second year, that file extensions (like .txt or .jpeg) have no real meaning in this magical world, they are only useful for mages to remind ourselves what type of content to expect. 
 
-If you correctly casted your incantation, you should now immediately be able to cast a new spell.
-
-Next week is Christmas break. After the break we will learn more about how to control multiple spells at once.
+Your \e[31mhomework\e[0m for the day is to make a closet and put inside of it my_name.txt, the file that you created for your homework last time. 
 

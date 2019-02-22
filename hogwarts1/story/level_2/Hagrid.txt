@@ -1,20 +1,25 @@
-Hello there
+Hi there,
 
-Have you been practicing those wand movements I taught you?
+Thanks for stopping by
 
-\e[96mcd ~\e[0m to quickly go back to your dorm room
+I am pretty far from everyone else, so I appreciate it
 
-and
+One way you can get here faster is by chaining multiple exit spells together
 
-\e[96mcd ../../..\e[0m to exit multiple rooms at once.
+Usually when you exit a room you can cast the spell \e[96mcd ..\e[0m
 
-They will help you move around the castle quickly.
+But if you want to exit multiple rooms at once, you can type something like
 
-Another wand movement that will help you quickly move around can only be used when you concentrate really hard on where you want to go.
+$ \e[95mcd ../..\e[0m
 
-Suppose you are in your dorm room and you want to quickly come and visit me. Since you know where I live, you can type the exact path to my hut. Try this:
+which will make you exit two rooms or even 
+
+$ \e[95mcd ../../..\e[0m
+
+which will make you exit three rooms all at once.
+
+try it by first going back to your dorm room and then using the spell like this
 
 $ \e[95mcd ~\e[0m
-$ \e[95mcd /hogwarts1/hagrids_hut\e[0m
-
-Hope that helps you navigate around the castle more quickly
+$ \e[95mcd ../../..\e[0m
+$ \e[95mcd whereami\e[0m

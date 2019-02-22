@@ -1,13 +1,10 @@
-There are many types of magic...
-Do this:
+You have now learned two ways to view a file: \e[96mcat\e[0m and \e[96mless\e[0m. 
 
-$ \e[95mhead sleep.sh\e[0m
+\e[96mcat\e[0m has the benefit of being simple and quick. \e[96mless\e[0m lets you view large files, but can be a little cumbersome.
+
+A good in between are the dual commands \e[96mhead\e[0m and \e[96mtail\e[0m which lets you view the head and tail of a potion, respectively.
+
+Try this (and then deduct 50 points from Gryffindor)
+
 $ \e[95mhead long_potion.pl\e[0m
-
-Notice that both potions start with the rune \e[96m#!\e[0m.
-
-This is called the "She-bang". "She" is pronounced with a soft e.
-
-The She-bang tells your wand what type of magic to use and where this magic can be found. In the case of sleep.sh, the magic being used is called \e[96mbash\e[0m. In the case of long_potion.pl, the magic being used is something called \e[96mperl\e[0m.
-
-At Hogwarts, we will only be concerned with bash, but it is important to know that there are other types of magic out there. You have already seen two, some of the other famous ones are, \e[96mpython\e[0m, \e[96mC++\e[0m, \e[96mjavascript\e[0m, and many others besides.
+$ \e[95mtail long_potion.pl\e[0m

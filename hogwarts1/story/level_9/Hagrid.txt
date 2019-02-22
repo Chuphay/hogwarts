@@ -1,9 +1,10 @@
-How are your finals going? Did you study hard for them?
+I really miss my wand, one thing that I found that was really useful was the two commands \e[96m<ctrl> + a\e[0m and \e[96m<ctrl> + e\e[0m. These can make navigating along long spells much more easy.
 
-Last time I told you about the up and down keys, and how they could scroll through your history, well did you know that if you cast \e[96mhistory\e[0m with your wand, you can see all of your history at the same time?
+For example, try this
 
-Try this:
+$ \e[95mCat "A really long sentence"\e[0m
 
-$ \e[95mhistory\e[0m
+Ooops, just noticed that \e[96mcat\e[0m is spelled with all lower case letters, well, no problem, simply type \e[96m<ctrl> + a\e[0m to go back to the beginning of the spell, and fix up that problem.
 
-Good luck on your finals
+Ooops, now I notice that all sentences should end with a period, no problem, simply type \e[96m<ctrl> + e\e[0m to go to the end of the sentence.
+

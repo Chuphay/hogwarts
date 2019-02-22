@@ -1,1 +1,9 @@
-[5mDefault text... [31mprobably an error[0m
+How are your finals going? Did you study hard for them?
+
+Last time I told you about the up and down keys, and how they could scroll through your history, well did you know that if you cast \e[96mhistory\e[0m with your wand, you can see all of your history at the same time?
+
+Try this:
+
+$ \e[95mhistory\e[0m
+
+Good luck on your finals

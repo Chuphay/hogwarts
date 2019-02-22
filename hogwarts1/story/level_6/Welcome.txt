@@ -18,16 +18,20 @@
                    \__)
 
 \e[0m
-Welcome to Hogwarts school of wizardry! 
+Welcome back from Christmas Break! 
 
-Previously, you have learned:
+Since you probably forgot everything you've learned last semester, here is a fairly comprehensive overview of what you have learned:
 
 \e[96mecho\e[0m which repeats the target of the spell
-
+\e[96m>\e[0m is the rune used to redirect a spell, often used to put text into a text file
 \e[96mcat\e[0m which prints the target of a spell, usually used on .txt files
-
 \e[96mls\e[0m which lists the contents of your current location
-
 \e[96mcd\e[0m is used to change directories (locations)
+\e[96mexit\e[0m is the spell that makes you exit this world
+\e[96mmv\e[0m moves a file from one location to another
+\e[96mcp\e[0m copies a file from one location to another
+\e[96mmkdir\e[0m makes a directory
+\e[96mrm\e[0m removes a file
+\e[96mrmdir\e[0m removes a directory
+\e[96msleep\e[0m makes your wand go to sleep
 
-\e[96mexit\e[0m is the spell thatmakes you exit this world

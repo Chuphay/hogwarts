@@ -1,8 +1,6 @@
-Your homework was to create a file called permissions.txt into your dorm room, with the three types of users that can use shields.
+Merry Christmas!
 
-Do you remember what they are? They are \e[96muser group other\e[0m. In other words try this:
+Did you get any presents? They are in your dorm room. 
 
-$ \e[96mcd ~\e[0m
-$ \e[96mecho "user group other" > permissions.txt\e[0m
-
+Go explore and have fun!
 

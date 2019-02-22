@@ -1,17 +1,31 @@
-Transfiguration is dangerous.
+Last time we learned how to find out our location with the spell \e[96mwhereami\e[0m
 
-Previously, we had learned who we are and where we are, two very important things to know.
+An equally important spell is to know who you are. If you are good at guessing, you might guess that the correct incantation is
 
-But another thing to know is which groups we belong to. The group you belong to will help you access different rooms and are a way of adding protections to the castle. 
+$ \e[95mwhoami\e[0m
 
-Try this:
+Try that.
 
-$ \e[95mgroups\e[0m
+You do have \e[31mhomework\e[0m this week!
 
-It show that you belong to two groups, one is simply your user name, you will always belong to this group! The other says "year_one", naturally, you are a year_one student, and you can access all the rooms that year_one students can access.
+Let me first tell you what your homework is, and then I'll will give you a helpful hint to help you complete it.
 
-After the christmas break, we will learn several shield enchantments. Some of these enchanments will be simple muggle repellents, and some will be so powerful that only a true archmage could break them. We will also learn to change objects from inanimate into animate and visa-versa... but that comes after the christmas break. For now, we must learn about groups.
+Your homework is to create a file in your dorm room called my_name.txt
 
-But for now, practice, practice, practice!
+Inside that text file you should write your name.
 
+Sounds straight-forward enough? 
 
+Here's the helpful hint
+
+Try 
+
+$ \e[95mecho whoami\e[0m
+
+notice it probably doesn't work quite as you expect. To make the spell work correctly you must use the special rune \e[96m`\e[0m which is known as the backtick character and can be found near the 1 on most wands.
+
+Try the following:
+
+$ \e[95mecho `whoami`\e[0m
+
+Good luck on your homework

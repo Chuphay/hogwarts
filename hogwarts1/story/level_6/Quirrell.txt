@@ -1,18 +1,16 @@
-L-l-last time we learned how to k-k-kill a spell by using \e[96m<ctrl> + c\e[0m.
+W-W-Welcome back. D-D-Did you get any R-R-Rest?
 
-This w-w-works well when you are actively casting a spell and something went wrong.
+I d-d-didn't. I kept on thinking there was a w-w-werewolf under my bed.
 
-HOwever, often times, you will want to kill spells that are in the background, with the \e[96mkill\e[0m invocation. Try this:
+Today I will t-t-teach you a new defensive technique, especially useful for when a spell goes wrong.
 
-$ \e[95msleep 10 &\e[0m
-$ \e[95mjobs\e[0m
-$ \e[95mkill %1\e[0m
+It's called \e[31CONTROL C\e[0m, and it can be used by findind the control key on your keyboard and pressing that while pressing c. We usually write it as \e[96mctrl+c\e[0m.
 
-Or you can even be choosy about, what tot kill, like this:
+Let's suppose you were using the \e[96msleep\e[0m spell, but you forgot to use the \e[96m&\e[0m rune... yikes, that's a bad mistake. L-L-Luckily, \e[96mctrl+c\e[0m will come to the r-r-rescue.
 
-$ \e[95msleep 35 &\e[0m
-$ \e[95msleep 30 &\e[0m
-$ \e[95msleep 25 &\e[0m
-$ \e[95mjobs\e[0m
-$ \e[95mkill %2\e[0m
-$ \e[95mjobs\e[0m
+Try this:
+
+$ \e[95msleep 15\e[0m
+$ \e[95mctrl+c\e[0m
+
+Practice, practice, practice! 

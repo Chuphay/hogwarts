@@ -1,19 +1,27 @@
-D-D-Dark Arts are S-S-Scary
+S-S-Sorry for running away last t-t-time
 
-I am going to teach you one of the most s-s-s-scary spells there is \e[96mrm\e[0m
+S-S-S-Spells are very S-S-Scary. One of the B-B-Best ways to deal with them is to re-re-redirect them
 
-\e[96mrm\e[0m removes a file 
+You can redirect them by using the \e[96m>\e[0m arrow (shares a key with . on most wands)
 
-\e[96mrm\e[0m is d-d-dangerous since you cannot raise d-d-dead files from the grave!
+But the q-q-question is where do you re-re-redirect the spell to? There are protections in this castle that make it impossible to redirect anywhere but for your own dorm room.
 
-M-M-Magic cannot bring dead people back to life... Once you’re dead, you’re dead.
+So to practice re-re-redirection you must first go back to your own dorm room.
 
-Try this in your dorm room:
+Next you need a target where the spell will live... try this
+
+First go to your dorm room
 
 $ \e[95mcd ~\e[0m
-$ \e[95mtouch soon_to_be_dead.txt\e[0m
-$ \e[95mls\e[0m
-$ \e[95mrm soon_to_be_dead.txt\e[0m
-$ \e[95mls\e[0m
 
-I think I n-n-need a glass of warm milk
+then 
+
+$ \e[95mecho "evil spell"\e[0m
+
+then 
+
+$ \e[95mecho "evil spell" > box.txt\e[0m
+
+finally, you can see the contents of box.txt
+
+$ \e[95mcat box.txt\e[0m

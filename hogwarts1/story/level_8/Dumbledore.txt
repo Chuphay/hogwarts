@@ -1,1 +1,9 @@
-[5mDefault text... [31mprobably an error[0m
+You had homework. It was pretty complicated, because you were making your first potion.
+
+The easiest way to do it, is go back to the potion class, and pay careful attention. If it becomes too difficult, you can follow the below directions:
+
+$ \e[95mcd ~\e[0m
+$ \e[95mecho "#!\bin\bash" > sleep.sh\e[0m
+$ \e[95mecho "sleep 2" >> sleep.sh\e[0m
+$ \e[95mchmod a+x sleep.sh\e[0m
+

@@ -1,15 +1,34 @@
-Instead of a \e[31mfinal\e[0m, you will be reasonable for doing a final project.
+Last week
+You examined
+the potion \e[96msleep.sh\e[0m
+with your first cauldron \e[96mnano\e[0m
 
-Your project is to create your own potion!
+This week, you will attempt to modify
+the potion, to create your own.
+This is your \e[31mhomework\e[0m!
+I doubt you will be able to finish
 
-Don't forget at the beginning of your potion you must add the she-bang: \e[96m#!/bin/bash\e[0m
+As you may be aware
+you can only modify things in
+your own dorm.
 
-You also must make your potion executable by using the transfiguration \e[96mchmod +x your_potion.sh\e[0m
+Thefore, you must 
+copy this potion
+to your dorm room.
+Then modify it to sleep 
+for only 2 seconds.
 
-Finally, remember that to use your potion you must evoke it like this:
+Remember, to exit (and to save)
+in \e[96mnano\e[0m 
+you must
+use \e[96m<ctrl> + x\e[0m
+and then follow the directions to save.
 
-$ \e[95m./your_potion.sh\e[0m
+Try this:
 
-My recommendation is to start off slowly. First make sure that you can at least invoke \e[96mecho\e[0m. It is very common to start off with a script that only contains \e[96mecho "hello world"\e[0m, and then make sure it performs as expected.
+$ \e[95mcp sleep.sh ~\ \e[0m
+$ \e[95mcd ~\e[0m
+$ \e[95mnano sleep.sh\e[0m
 
-Good luck! 
+Then modify the potion to sleep for 2 seconds.
+

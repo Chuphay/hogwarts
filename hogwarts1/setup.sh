@@ -8,7 +8,7 @@ fi
 export location="/hogwarts2"
 export directory=`pwd`
 
-delete_everything="false"
+delete_everything=1 # "false"
 
 if [[ $delete_everything == 1 ]]; then
   echo "Deleting everything"
@@ -71,6 +71,8 @@ mkdir -p /usr/local/bin/hogwarts
 chmod 0755 /usr/local/bin/hogwarts
 
 $directory/src/make_characters.sh 
+
+# And give correct ownership to the potions
 chown dumbledore:year_one $castle/classrooms/Potions/sleep.sh
 chown dumbledore:year_one $castle/classrooms/Potions/long_potion.pl
 

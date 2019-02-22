@@ -1,22 +1,33 @@
+You are here to learn the subtle science and exact art of potion maki    ng
+
+I don't expect many of you will     understand the beauty of softly simmering cauldrons with their shimme    ring fumes or the delicate power of liquids that creep through human v    eins with the ability to either save or take a life. . . . I can teach     you how to bottle fame, brew glory, and even . . . put a stopper in d    eath. The only question is . . . are you a lazy good for nothing dunde    rhead, or are you willing and capable of learning one of the strongest     magicks in existence?
+
+Thankfully, they wouldn't be brewing anything that lesso    n. They would be learning how to use the equipment and the techniques     needed to chop, cut, slice, and dice properly.
+
 Potions
 Is not
 A game.
 
-You are here to learn the subtle science and exact art of potion maki    ng
+You
+Are
+Too young 
+To learn it.
 
-I don't expect many of you will     understand the beauty of softly simmering cauldrons with their shimme    ring fumes or the delicate power of liquids that creep through human v    eins with the ability to either save or take a life. . . . I can teach     you how to bottle fame, brew glory, and even . . . put a stopper in d    eath. The only question is . . . are you a lazy good for nothing dunde    rhead, or are you willing and capable of learning one of the strongest     magicks in existence?"
+Deduct 
+50 points
+From 
+Gryffindor.
 
-wouldn't be brewing anything that lesso    n. They would be learning how to use the equipment and the techniques     needed to chop, cut, slice, and dice properly
+Let's see if your
+insignificant minds 
+can even read 
+the ingredients 
+of a potion.
 
-last time you learned the \e[96mcat\e[0m spell, which lets you view the contents of a potion.
+Use \e[96mcat\e[0m
+to read.
 
-However, some potions are very long and detailed. And \e[96mcat\e[0m simply won't work. We therefore use \e[96mless\e[0m as the preferred spell to slowly scroll through the contents of a potions.
+Try this:
 
-To exit \e[96mless\e[0m type the rune \e[96mq\e[0m. For bonus points. Instead of using the arrows to scroll up and down use the two runes \e[96mj\e[0m and \e[96mk\e[0m. These two runes will help you in advanced potion making.
-
-Try this
-
-$ \e[95mcat long_potion.pl\e[0m
-$ \e[95mless long_potion.pl\e[0m
-
-And then don't forget the rune \e[96mq\e[0m will exit. (sometimes typing \e[96m<esc>\e[0m a few times can't hurt. 
+$ \e[95mls\e[0m
+$ \e[95mcat sleep.sh\e[0m

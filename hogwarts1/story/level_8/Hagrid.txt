@@ -1,10 +1,14 @@
-I really miss my wand, one thing that I found that was really useful was the two commands \e[96m<ctrl> + a\e[0m and \e[96m<ctrl> + e\e[0m. These can make navigating along long spells much more easy.
+Last time, I told ya about tab completion. Pretty useful right?
 
-For example, try this
+Another really useful shortcut, is using the up and down arrows.
+This allows you to scroll through your history, to re-use old spells
 
-$ \e[95mCat "A really long sentence"\e[0m
+For example try:
 
-Ooops, just noticed that \e[96mcat\e[0m is spelled with all lower case letters, well, no problem, simply type \e[96m<ctrl> + a\e[0m to go back to the beginning of the spell, and fix up that problem.
+$ \e[95mecho hello\e[0m
 
-Ooops, now I notice that all sentences should end with a period, no problem, simply type \e[96m<ctrl> + e\e[0m to go to the end of the sentence.
+Then press the up key, to see that spell become re-usable.
 
+If you keep pressing up, you can go further back into the history of the spells you have casted. Pressing down, will reverse this process.
+
+Have fun and practice!

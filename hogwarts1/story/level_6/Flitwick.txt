@@ -1,14 +1,16 @@
-Last week we learned about adding several spells to the background and viewing them using the rune \e[96m&\e[0m to place a spell in the background, and \e[96mjobs\e[0m to view them.
+Welcome back from Christmas break. Hopefully it was restful.
 
-But what if you forgot to use the \e[96m&\e[0m rune when you cast a spell. Is there a way to then subsequently move it to the background? 
+Last time we learned about \e[96msleep\e[0m and we learned how to put that job in the background using the \e[96m&\e[0m rune.
 
-Naturally there is, we use the special command \e[96m<ctrl> + z\e[0m , yes that means press the control key while pressing z. This detaches and stops a spell. to move that spell to the background, use\e[96mbg\e[0m. Then to bring it back to the fg, use \e[96mfg\e[0m.
+Today, we are going to learn a powerful charm to see all the different spells that have been cast. It iscalled \e[96mjobs\e[0m!
 
-Let's try it out:
+Try this:
 
-$ \e[95msleep 100\e[0m
-$ \e[95m<ctrl> + z\e[0m
-$ \e[95mbg\e[0m
+$ \e[95msleep 20 &\e[0m
 $ \e[95mjobs\e[0m
-$ \e[95mfg\e[0m
-$ \e[95m<ctrl> + c\e[0m  
+
+Of course, that was with only one job running. You can try more spells:
+
+$ \e[95msleep 20 &\e[0m
+$ \e[95msleep 15 &\e[0m
+$ \e[95jobs\e[0m

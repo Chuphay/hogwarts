@@ -1,1 +1,8 @@
-[5mDefault text... [31mprobably an error[0m
+Your homework was to create a file called permissions.txt into your dorm room, with the three types of users that can use shields.
+
+Do you remember what they are? They are \e[96muser group other\e[0m. In other words try this:
+
+$ \e[96mcd ~\e[0m
+$ \e[96mecho "user group other" > permissions.txt\e[0m
+
+

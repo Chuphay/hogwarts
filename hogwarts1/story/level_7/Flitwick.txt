@@ -1,32 +1,14 @@
-Last week, we learned about putting spells in the background when you forget to use the special rune \e[96m&\e[0m. The way we do that was to use \e[96m<ctrl> + z\e[0m and then the command \e[96mbg\e[0m to put it in the background, bringing it up to the foreground is easy enough too with the command \e[96mfg\e[0m.
+Last week we learned about adding several spells to the background and viewing them using the rune \e[96m&\e[0m to place a spell in the background, and \e[96mjobs\e[0m to view them.
 
-This week we will continue in that vein, but with more complicated options. Try this:
+But what if you forgot to use the \e[96m&\e[0m rune when you cast a spell. Is there a way to then subsequently move it to the background? 
 
-$ \e[95msleep 180 &\e[0m
-$ \e[95msleep 180 &\e[0m
-$ \e[95msleep 180 &\e[0m
-$ \e[95mjobs\e[0m
+Naturally there is, we use the special command \e[96m<ctrl> + z\e[0m , yes that means press the control key while pressing z. This detaches and stops a spell. to move that spell to the background, use\e[96mbg\e[0m. Then to bring it back to the fg, use \e[96mfg\e[0m.
 
-You should see the following output:
-/e[96m
-[1]   Running                 sleep 180 &
-[2]-  Running                 sleep 180 &
-[3]+  Running                 sleep 180 &
-/e[0m
+Let's try it out:
 
-By the way, if you found all that typing difficult, you should really see Hagrid, he usually has really good advice about how to speed up your wand usage.
-
-Now, try this
-
-$ \e[95mfg %2\e[0m
+$ \e[95msleep 100\e[0m
 $ \e[95m<ctrl> + z\e[0m
-$ \e[95mfg %1\e[0m
-$ \e[95m<ctrl> + z\e[0m
-$ \e[95mbg %2\e[0m
+$ \e[95mbg\e[0m
 $ \e[95mjobs\e[0m
-
-Did you get what we did? 
-
-Practice, practice, practice.
-
-
+$ \e[95mfg\e[0m
+$ \e[95m<ctrl> + c\e[0m  

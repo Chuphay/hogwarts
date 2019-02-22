@@ -1,14 +1,9 @@
-Last time, I told ya about tab completion. Pretty useful right?
+How ya doin?
 
-Another really useful shortcut, is using the up and down arrows.
-This allows you to scroll through your history, to re-use old spells
+Wands are awesome! But sometimes it feels like you need to do a lot of spell casting to get anything done. Luckily, there's a way to make your spell casting faster, by using the \e[96m<tab>\e[0m key in the upper left corner of your keyboard. \e[96m<tab>\e[0m completion workd=s by letting your wand guess what you are trying to cast. For example instead of invoking my full name, when trying to talk with me, try doing this instead:
 
-For example try:
+$ \e[95mHa\e[0m \e[96m<tab>\e[0m
 
-$ \e[95mecho hello\e[0m
+Did that work for you? Try practicing it when you move around too:
 
-Then press the up key, to see that spell become re-usable.
-
-If you keep pressing up, you can go further back into the history of the spells you have casted. Pressing down, will reverse this process.
-
-Have fun and practice!
+$ \e[95m cd ho\e[0m \e[96m<tab>\e[0m

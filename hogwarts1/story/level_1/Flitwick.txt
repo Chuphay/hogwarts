@@ -1,25 +1,25 @@
-Last week we learned the important \e[96mecho\e[0m spell
+Welcome! Welcome!
 
-Today we are going to learn two new spells, the \e[96mtouch\e[0m spell and the \e[96mcp\e[0m
+This is your first charms class. I will be your professor. Professor Flitwick!
 
-Remember that spells are generally cast in the following manner
+Obviously the terminal is your wand and the wand is the tool you use to cast spells.
 
-$ spell -options target
+Spell Casting Area: The spell casting area is just blank space. Any blank space after the prompt is where the letters you type will be displayed. It’s in this blank space that you will be casting your spells.
 
-If you mess up an invocation it isn't going to work, double check your spelling. Magic is one of those things where you really need to be exact, mis-pronouncing a spell usually will end up with nothing happening. So pay attention! Finally, we will learn about options later.
+Read instructions carefully... remember it's laviosa not laviosa. if you mess up an invocation it isn't going to work, double check your spelling (pronounciation). Magic is one of those things where you really need to be exact, mis-pronouncing a spell usually will end up with nothing happening. So pay attention!
 
-\e[96mtouch\e[0m is a spell of creation. The target is the thing you want to create. 
+Almost all spells follow the same recipe. The name of the spell followed by the target of the spell (and as you get more advanced, we will learn how to add additional options to the spell):
 
-There are protections in this castle that will not permit you to willy-nilly create things anywhere you want. You can only create things in your own dorm room. Please try this at home:
+$ \e[95mspell -options target\e[0m
 
-$ \e[95mcd ~\e[0m
-$ \e[95mtouch test\e[0m
-$ \e[95mls\e[0m
+Where the $ sign represents the prompt.
 
-\e[96mcp\e[0m is a spell to copy files and even change their names. Try this in your dorm room:
+Ok. Let's learn our first spell \e[96mecho\e[0m . As the name might suggest, this spell repeats the target of the spell. For example try:
 
-$ \e[95mtouch file1.txt\e[0m
-$ \e[95mcp file1.txt file2.txt\e[0m
-$ \e[95mls\e[0m
+$ \e[95mecho Hello\e[0m 
 
-Remember, practice makes perfect!
+some people prefer to put quotations around the words, try this:
+
+$ \e[95mecho "I am learning magic!"\e[0m
+
+Remember practice makes perfect

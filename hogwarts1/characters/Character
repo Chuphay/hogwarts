@@ -16,15 +16,15 @@ if [ "$level" = "demo" ]
 then 
     echo -e "$(cat /usr/local/src/hogwarts1/demo/${the_character}.txt)"
 else 
-    for i in {0..10}
+    for i in {1..11}
     do
-        if [ "$level" = "year_one 9" ]
+        if [ "$level" = "year_one 10" ]
         then
             if [ "$the_character" == "McGonagall" ] || [ "$the_character" == "Flitwick" ] || [ "$the_character" == "Quirrell" ]
             then
-                bash /usr/local/src/hogwarts1/level_9/${the_character}.txt 
+                bash /usr/local/src/hogwarts1/level_10/${the_character}.txt 
             else
-                echo -e "$(cat /usr/local/src/hogwarts1/level_9/${the_character}.txt)"
+                echo -e "$(cat /usr/local/src/hogwarts1/level_10/${the_character}.txt)"
             fi
             break
         elif [ "$level" = "year_one $i" ]

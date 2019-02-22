@@ -1,25 +1,23 @@
-Now that we've had a fair amount of explanation of what you see when you cast \e[96mls -l\e[0m, Including changing the group with \e[95mchgrp\e[0m. Let's practice changing the shields on a file. 
+We are still learning about using the \e[96mls -l\e[0m command, as we will for the rest of the year.
 
-Remember, that a file cares about three types of users: the owner (o), the group (g) , and everyone else or all (a). Each of these groups has three types of things they can do with a file. 
+We learned last time. Besides for any additional files in your dorm room, you should see something like:
 
-I. read (r)
-II. write (w)
-III. execute (x)
+drwxrwxr-x 2 McGonagall Archmage 4096 Jan 11 11:09 \e[35mtest_directory\e[0m
+-rw-rw-r-- 1 McGonagall Archmage    0 Jan 11 11:09 test.txt
 
-It is quite easy to modify a file to give it just the right kinds of permissions, which is what we will learn in the next lesson. In this lesson, we will make changes to a file that changes its behavior for all three types of users, using the \e[96mchmod\e[0m spell. Try this in your dorm room
+But obviously with your name instead of mine, and your group will be fi, and with the current date.
 
-$ \e[95mcd ~\closete[0m
-$ \e[95mtouch practice.txt\e[0m
+We already learned that the two names refer to the owner and the group that the file belongs to. We also began to learn a bit about deciphering what the very cryptic \e[96mdrwxrwxr-x\e[0m entry means. It's a way to place various shields and protections on your files. 
+  
+We look at it as four columns:
+
+\e[95m- | rw- | rw- | r--\e[0m
+
+The first column is an indicator of what type of file it is, \e[96md\e[0m represents a directory and \e[96m-\e[0m represents a file. The next three columns are shields or protections. The first of these are the protections from the owner of the file (who we call "user"). The second of these is the protections from the group of the file (who we call "group"). And the last column represents the protections for everyone else (who we call "other").
+
+Today, your \e[31mhomework\e[0m will be to change the group that a file belongs to. This is easy to do with the \e[96mchgrp\e[0m spell. Your \e[31mhomework\e[0m is to copy the file in your dorm room called "permissions.txt" to "my_permissions.txt" and then change the group to year_one, like this:
+
+$ \e[95mcd ~\e[0m
+$ \e[95mcp permissions.txt my_permissions.txt\e[0m
+$ \e[95mchgrp first_year my_permissions.txt\e[0m
 $ \e[95mls -l\e[0m
-$ \e[95mchmod -r\e[0m
-$ \e[95mls -l\e[0m
-$ \e[95mchmod +x\e[0m
-$ \e[95mls -l\e[0m
-$ \e[95mchmod +w\e[0m
-$ \e[95mls -l\e[0m
-
-
-Hopefully, the output you saw makes sense. Your homework \e[31mhomework\e[0m is to change this practice file, such that its permissions look like
-
-\e[96m-rwxrwxrwx\e[0m
-

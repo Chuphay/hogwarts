@@ -18,7 +18,11 @@
                    \__)
 
 \e[0m
-Welcome to the third month of your first year at Hogwarts School of Wizardry! 
+Welcome to the second month of your first year.
+
+Hopefully you took a little break to let all the new stuff you're learning sink in.
+
+To become proficient quickly, you should write everything you learn in a notebook, and perhaps even start memorizing the spells.
 
 Previously, you have learned:
 
@@ -30,6 +34,6 @@ Previously, you have learned:
 
 \e[96mcd\e[0m is used to change directories (locations)
 
-\e[96mtouch\e[0m is the spell that creates a new file, but you can only use this in your own dorm room
+\e[96mexit\e[0m which takes you out of Hogwarts
 
-Finally, you learned how to redirect a spell into a text file by using \e[96m>\e[0m
+Remember, have fun. Don't use your mouse. And it's not a race, take your time and practice what you have learned.

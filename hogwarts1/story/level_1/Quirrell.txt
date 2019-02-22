@@ -1,27 +1,5 @@
-S-S-Sorry for running away last t-t-time
+This is D-D-Defense Against the D-D-D-Dark A-A-Arts
 
-S-S-S-Spells are very S-S-Scary. One of the B-B-Best ways to deal with them is to re-re-redirect them
+The world is S-S-Scary...
 
-You can redirect them by using the \e[96m>\e[0m arrow (shares a key with . on most wands)
-
-But the q-q-question is where do you re-re-redirect the spell to? There are protections in this castle that make it impossible to redirect anywhere but for your own dorm room.
-
-So to practice re-re-redirection you must first go back to your own dorm room.
-
-Next you need a target where the spell will live... try this
-
-First go to your dorm room
-
-$ \e[95mcd ~\e[0m
-
-then 
-
-$ \e[95mecho "evil spell"\e[0m
-
-then 
-
-$ \e[95mecho "evil spell" > box.txt\e[0m
-
-finally, you can see the contents of box.txt
-
-$ \e[95mcat box.txt\e[0m
+I'm going to go hide

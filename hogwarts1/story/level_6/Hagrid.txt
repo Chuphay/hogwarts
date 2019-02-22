@@ -1,9 +1,8 @@
-How ya doin?
+I really miss my wand. And I taught you some awesome wand commands last semester. Hopefully you found them really helpfull!
 
-Wands are awesome! But sometimes it feels like you need to do a lot of spell casting to get anything done. Luckily, there's a way to make your spell casting faster, by using the \e[96m<tab>\e[0m key in the upper left corner of your keyboard. \e[96m<tab>\e[0m completion workd=s by letting your wand guess what you are trying to cast. For example instead of invoking my full name, when trying to talk with me, try doing this instead:
+Here's a list of all the ways I taught you how to move around with just your wand:
 
-$ \e[95mHa\e[0m \e[96m<tab>\e[0m
-
-Did that work for you? Try practicing it when you move around too:
-
-$ \e[95m cd ho\e[0m \e[96m<tab>\e[0m
+\e[96mcd ~\e[0m sends you directly back to your dorm room
+\e[96mcd ../..\e[0m lets you exit multiple rooms at a time
+\e[96mcd /path/to/room\e[0m let's you go directly to a room if you know the whole path
+\e[96mpushd room\e[0m and \e[96mpopd\e[0m lets you jump to a room, and then pop out back to your original location.  

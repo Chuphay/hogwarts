@@ -1,8 +1,9 @@
-#!/bin/bash
+We've learned so much this year. I-I-I'm very p-p-proud of you.
 
-echo "What is 2+3?"
-multiple.sh 2 7 5 1
+I wanted to review some of your lessons before the \e[31mf-f-f-final\e[0m next week.
 
-echo "How do you feel?"
-multiple.sh 3 "pretty ok" "not so hot" "awesome!"
+We learned how to redirect a spell with the rune \e[96m>\e[0m. We usually use this to redirect text into a file. To create content, we can generally use some combination of \e[96mtouch\e[0m, \e[96mcp\e[0m, \e[96mmv\e[0m, and \e[96mmkdir\e[0m. We can use the combination of \e[96mrm\e[0m and \e[96mrmdir\e[0m to delete the things that we have made. D-D-Dangerous archmages may even try to do that to things that were created by others.
 
+We finally learned about dealing with long-lasting spells, also known as curses. We can use \e[96m<ctrl> + c\e[0m to kill a curse in the foreground. We can use \e[96m<ctrl> + z\e[0m to stop or pause a curse, and then combinations of \e[96mfg\e[0m and \e[96mbg\e[0 to move those curses into and out of the foreground and background. Finally we learned the powerful \e[96mkill\e[0m spell itself. This is used like \e[96m<ctrl> + c\e[0m, but can be used on any spell, not only the one that is in the foreground.
+
+Good luck on your \e[31mfinal\e[0m next week! 

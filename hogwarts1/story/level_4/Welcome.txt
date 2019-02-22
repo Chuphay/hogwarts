@@ -18,8 +18,14 @@
                    \__)
 
 \e[0m
-Merry Christmas!
+Welcome to the fourth month of your first year. Next month is Christmas Break! So stay sharp and study hard.
 
-You have presents in your dorm room.
+Previously, you have learned:
 
-See what they are, and explore, experiment and have fun!
+\e[96mmkdir\e[0m which makes a new directory
+
+\e[96mcp\e[0m which copies a file
+
+\e[96mmv\e[0m which moves a file
+
+\e[96mrm\e[0m which removes a file

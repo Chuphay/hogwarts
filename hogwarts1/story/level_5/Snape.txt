@@ -1,31 +1,11 @@
-Dumbledore
-said
-I must 
-teach you.
+Christmas.
 
-I have 
-added
-a potion
-to the materials
-in this 
-classroom
-
-The first
-thing
-to learn
-is how to 
-use
-a potion.
+I 
+hate it.
 
 You 
-are 
-probably 
-too stupid
-to do it
-yourself.
-Deduct 25 points
-from Gryffindor.
+should 
+be studying.
 
-Consume a potion like this:
-
-$ \e[95m./sleep.sh\e[0m
+50 points
+from Gryffindor!

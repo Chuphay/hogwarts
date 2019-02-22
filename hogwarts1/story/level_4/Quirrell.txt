@@ -1,3 +1,14 @@
-It's Christmas break
+L-L-Last time we learned the d-d-dark spell \e[96mrm\e[0m
 
-Go have fun with your friends
+This time we are going to learn the equally d-d-dark spell \e[96mrmdir\e[0m
+
+As you may be able to tell from the name this spell removes a directory, or in other words, deletes a whole room.
+
+Try this:
+
+$ \e[95mcd ~\e[0m
+$ \e[95mmkdir dead_room\e[0m
+$ \e[95mls\e[0m
+$ \e[95mrmdir dead_room\e[0m
+
+A note on the use of this s-s-spell, it only works if the room is already empty.

@@ -1,31 +1,31 @@
-Last week 
-you learned 
-how to 
-consume
+Dumbledore
+said
+I must 
+teach you.
+
+I have 
+added
+a potion
+to the materials
+in this 
+classroom
+
+The first
+thing
+to learn
+is how to 
+use
 a potion.
 
-This week
-let us learn 
-how to examine 
-the ingredients
-in a potion.
+You 
+are 
+probably 
+too stupid
+to do it
+yourself.
+Deduct 25 points
+from Gryffindor.
 
-\e[96mnano\e[0m is
-the name of 
-our most basic
-noob friendly
-cauldron.
+Consume a potion like this:
 
-Before, using \e[96mnano\e[0m
-because you are such a dunderhead
-I must teach you how to exit.
-
-Press \e[96m<ctrl> + x\e[0m,
-Yes that means 
-press the ctrl key and the 
-x button at the same time.
-
-Try this now:
-
-$ \e[95mnano sleep.sh\e[0m
-
+$ \e[95m./sleep.sh\e[0m

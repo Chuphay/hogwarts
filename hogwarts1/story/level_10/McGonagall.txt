@@ -1,1 +1,8 @@
-[5mDefault text... [31mprobably an error[0m
+#!/bin/bash
+
+echo "What is 2+3?"
+multiple.sh 2 7 5 1
+
+echo "How do you feel?"
+multiple.sh 3 "pretty ok" "not so hot" "awesome!"
+

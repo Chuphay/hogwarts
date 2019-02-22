@@ -18,22 +18,22 @@
                    \__)
 
 \e[0m
-Welcome to the second month of your first year.
+Welcome to the first year of your program at Hogwarts School of Wizardry!
 
-Hopefully you took a little break to let all the new stuff you're learning sink in.
+I am Professor Dumbledore, and I will be guiding you through your stay at Hogwarts. After finishing this year, you will know enough magic that you will be competent enough with your wand to perform most every-day spells.
 
-To become proficient quickly, you should write everything you learn in a notebook, and perhaps even start memorizing the spells.
+This year is broken up into a fall semester and a spring semester, each of which have four months (or days depending on your speed). After you have learned all the lessons for a particular month, you should come and visit me, so that I can check your progress and move you along to the next month.
 
-Previously, you have learned:
+You are now in your dorm room. It is located in Gryffindor Tower. To get to the main part of the castle, you will have to leave your room, then leave the dorms, then leave Gryffindor Tower.
 
-\e[96mecho\e[0m which repeats the target of the spell
+A couple notes to remember.
 
-\e[96mcat\e[0m which prints the target of a spell, usually used on .txt files
+\e[96mls\e[0m illuminates your surroundings
 
-\e[96mls\e[0m which lists the contents of your current location
+\e[96mcd room_name\e[0m is used to enter a room
 
-\e[96mcd\e[0m is used to change directories (locations)
+\e[96mcd ..\e[0m is used to exit a room
 
-\e[96mexit\e[0m which takes you out of Hogwarts
+Explore, experiment, and talk to whomever you meet. But please do \e[31mnot\e[0m use your mouse. It may be uncomfortable at first, but eventually you will pick up speed using your wand.
 
-Remember, have fun. Don't use your mouse. And it's not a race, take your time and practice what you have learned.
+Also, you should be warned, the second floor is forbidden.  

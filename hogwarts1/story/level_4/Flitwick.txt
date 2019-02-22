@@ -1,3 +1,20 @@
-It's Christmas break
+Welcome to charms.
 
-Go have fun with your friends
+Today we are going to learn a really cool spell called \e[96msleep\e[0m
+
+Try it:
+
+$ \e[95msleep 5\e[0m
+
+Pretty cool, right?
+
+But notice how you can't do anything for ten seconds? There's a way to make a spell work in the background, so that you can cast other spells and that's with the \e[96m&\e[0m rune.
+
+Try this 
+
+$ \e[95msleep 20 &\e[0m
+
+If you correctly casted your incantation, you should now immediately be able to cast a new spell.
+
+Next week is Christmas break. After the break we will learn more about how to control multiple spells at once.
+

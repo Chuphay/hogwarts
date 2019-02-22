@@ -1,31 +1,26 @@
-Last time we learned how to find out our location with the spell \e[96mwhereami\e[0m
+Transfiguration is some of the most complex and dangerous magic you will learn at Hogwarts. Anyone messing around in my class will leave and not come back. You have been warned.
 
-An equally important spell is to know who you are. If you are good at guessing, you might guess that the correct incantation is
+What is transfiguration you ask? 
 
-$ \e[95mwhoami\e[0m
+Let me compare it to charms
 
-Try that.
+With a charm you add properties to something. With a transfiguration you change its nature completely; the molecular structure alters. It is possible to change inanimate objects into animate ones and vice versa.
 
-You do have \e[31mhomework\e[0m this week!
+In this class you will be learning how to change not only objects, but you will also learn how to change yourself. 
 
-Let me first tell you what your homework is, and then I'll will give you a helpful hint to help you complete it.
+You will learn how to change your surroundings and how to change even time itself!
 
-Your homework is to create a file in your dorm room called my_name.txt
+Because of the seriousness of this magic, we will proceed slowly.
 
-Inside that text file you should write your name.
+In order to change something you must know about the thing you are going to change first!
 
-Sounds straight-forward enough? 
+Let us start with our surroundings. A first, most natural question is, where am I?
 
-Here's the helpful hint
+To find the answere to that we must simply use the spell \e[96mwhereami\e[0m . Try this with your wand:
 
-Try 
+$ \e[95mwhereami\e[0m
 
-$ \e[95mecho whoami\e[0m
+If you have performed the spell correctly, it should show you were you are.
 
-notice it probably doesn't work quite as you expect. To make the spell work correctly you must use the special rune \e[96m`\e[0m which is known as the backtick character and can be found near the 1 on most wands.
+This is an important spell, not only for transfiguration, but in case if you ever get lost.
 
-Try the following:
-
-$ \e[95mecho `whoami`\e[0m
-
-Good luck on your homework
