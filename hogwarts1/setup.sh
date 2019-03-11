@@ -8,7 +8,7 @@ fi
 export location="/hogwarts"
 export directory=`pwd`
 
-delete_everything="false"
+delete_everything=1 #"false"
 
 if [[ $delete_everything == 1 ]]; then
   echo "Deleting everything"
@@ -37,9 +37,6 @@ chmod 0700 /usr/local/bin/.hogwarts
 cp $directory/powerspells/* /usr/local/bin/.hogwarts
 cat $directory/powerspells/join.sh | envsubst '${location}'> /usr/local/bin/.hogwarts/join.sh
 chmod 0111 /usr/local/bin/.hogwarts/*
-
-# Put the error message into its place
-cp $directory/src/bash_error.sh /usr/local/bin/hogwarts/bash_error.sh
 
 
 # Finally we are ready to make the actual world
@@ -70,6 +67,9 @@ chmod 0755 $castle/gryffindor_tower
 # Here we setup all the characters and artifacts in the world
 mkdir -p /usr/local/bin/hogwarts
 chmod 0755 /usr/local/bin/hogwarts
+
+# Put the error message into its place
+cp $directory/src/bash_error.sh /usr/local/bin/hogwarts/bash_error.sh
 
 $directory/src/make_characters.sh 
 
