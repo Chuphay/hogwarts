@@ -36,4 +36,4 @@ Third, don't forget the spells you have already learned. A great idea is to writ
 
 Finally, try not to use your mouse. It may be uncomfortable at first, but as you practice using your wand, you will gain speed and technique.
 
-Have fun!
+Try talking to Ron by typing \e[95mRon\e[0m with your wand. Have fun! 
