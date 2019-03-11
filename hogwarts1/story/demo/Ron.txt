@@ -7,3 +7,5 @@ $ \033[95mcd gryffindor_tower\033[0m
 There you will find Harry, you should talk to him
 
 (\033[31mDon't\033[0m type the \033[96m$\033[0m, that represents the command prompt)
+
+Also, you should be compulsively typing \e[95mls\e[0m everywhere you go
