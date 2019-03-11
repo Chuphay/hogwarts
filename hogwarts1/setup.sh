@@ -5,7 +5,7 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-export location="/hogwarts2"
+export location="/hogwarts"
 export directory=`pwd`
 
 delete_everything="false"
@@ -38,7 +38,8 @@ cp $directory/powerspells/* /usr/local/bin/.hogwarts
 cat $directory/powerspells/join.sh | envsubst '${location}'> /usr/local/bin/.hogwarts/join.sh
 chmod 0111 /usr/local/bin/.hogwarts/*
 
-
+# Put the error message into its place
+cp $directory/src/bash_error.sh /usr/local/bin/hogwarts/bash_error.sh
 
 
 # Finally we are ready to make the actual world
@@ -55,7 +56,7 @@ else
 fi
 
 # Give ownership of the castle to the correct accounts and groups
-castle="$location/hogwarts_castle"
+castle="$location/castle"
 chown -R dumbledore:archmage $location
 chown -R dumbledore:year_one $location/hagrids_hut $castle/library $castle/great_hall $castle/headmasters_office 
 chown dumbledore:year_one $castle/classrooms $castle/classrooms/*

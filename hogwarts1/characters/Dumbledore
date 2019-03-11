@@ -43,7 +43,7 @@ then
     fi
 elif [ "$level" = "year_one 2" ]
 then
-    if [ "$(cat $location/hogwarts_castle/gryffindor_tower/dorms/$user/my_name.txt 2>&1)" == "$user" ]
+    if [ "$(cat $location/castle/gryffindor_tower/dorms/$user/my_name.txt 2>&1)" == "$user" ]
     then
         echo "Congratulations! You have finished your homework!"
         sudo /usr/local/bin/.hogwarts/power_up.sh $user 3 
@@ -53,7 +53,7 @@ then
     fi
 elif [ "$level" = "year_one 3" ]
 then
-    if [ "$(cat $location/hogwarts_castle/gryffindor_tower/dorms/$user/closet/my_name.txt 2>&1)" == "$user" ]
+    if [ "$(cat $location/castle/gryffindor_tower/dorms/$user/closet/my_name.txt 2>&1)" == "$user" ]
     then
         echo "Congratulations! You have finished your homework!"
         sudo /usr/local/bin/.hogwarts/power_up.sh $user 4 
@@ -69,8 +69,8 @@ then
     if [ $join = "yes" ]
     then
         sudo /usr/local/bin/.hogwarts/power_up.sh $user 5 
-        cp /usr/local/bin/hogwarts/empty $location/hogwarts_castle/gryffindor_tower/dorms/$user/invisibility_cloak
-        cp /usr/local/bin/hogwarts/empty $location/hogwarts_castle/gryffindor_tower/dorms/$user/flute
+        cp /usr/local/bin/hogwarts/empty $location/castle/gryffindor_tower/dorms/$user/invisibility_cloak
+        cp /usr/local/bin/hogwarts/empty $location/castle/gryffindor_tower/dorms/$user/flute
         Welcome
     else
         echo "very well, come back when you are ready"
@@ -91,7 +91,7 @@ then
 elif [ "$level" = "year_one 6" ]
 then
  
-    if [ "$(cat $location/hogwarts_castle/gryffindor_tower/dorms/$user/permissions.txt 2>&1)" == "user group other" ]
+    if [ "$(cat $location/castle/gryffindor_tower/dorms/$user/permissions.txt 2>&1)" == "user group other" ]
     then
         echo "Yay! You finished your homework"   
         sudo /usr/local/bin/.hogwarts/power_up.sh $user 7 
@@ -102,17 +102,17 @@ then
 elif [ "$level" = "year_one 7" ]
 then
     
-    if [ "$(ls -l $location/hogwarts_castle/gryffindor_tower/dorms/$user/permissions.txt | awk '{print $4}' 2>&1)" == "year_one" ]
+    if [ "$(ls -l $location/castle/gryffindor_tower/dorms/$user/permissions.txt | awk '{print $4}' 2>&1)" == "year_one" ]
     then
         echo "Yay! You finished your homework"
-        echo "Voldemort was here!" >> $location/hogwarts_castle/gryffindor_tower/dorms/$user/permissions.txt 
+        echo "Voldemort was here!" >> $location/castle/gryffindor_tower/dorms/$user/permissions.txt 
         sudo /usr/local/bin/.hogwarts/power_up.sh $user 8 
     else
         echo "Your homework was to create a file called permissions.txt in your dorm with the group set to year_one"
     fi
 elif [ "$level" = "year_one 8" ]
 then
-    if [ "$(cat $location/hogwarts_castle/gryffindor_tower/dorms/$user/sleep.sh | awk 'NF > 1' 2>&1)" == "sleep 2" ]
+    if [ "$(cat $location/castle/gryffindor_tower/dorms/$user/sleep.sh | awk 'NF > 1' 2>&1)" == "sleep 2" ]
     then
         echo "Yay! You finished your Potions homework. I decided not to check your transfiguration homework, because I know you are such a good student!"
         sudo /usr/local/bin/.hogwarts/power_up.sh $user 9 

@@ -6,8 +6,8 @@ cp $directory/src/mirror_of_erised /usr/local/bin/hogwarts/
 cp $directory/src/Fluffy /usr/local/bin/hogwarts/
 cp $directory/src/flute /usr/local/bin/hogwarts/
 cp $directory/src/invisibility_cloak /usr/local/bin/hogwarts/
-cp $directory/src/sleep.sh $location/hogwarts_castle/classrooms/Potions/
-cp $directory/src/long_potion.pl $location/hogwarts_castle/classrooms/Potions/
+cp $directory/src/sleep.sh $location/castle/classrooms/Potions/
+cp $directory/src/long_potion.pl $location/castle/classrooms/Potions/
 chmod 0755 /usr/local/bin/hogwarts/*
 chmod u+s /usr/local/bin/hogwarts/empty
 
@@ -34,7 +34,7 @@ cp $directory/characters/Character /usr/local/bin/hogwarts/Snape
 
 
 
-hc="$location/hogwarts_castle"
+hc="$location/castle"
 dirs=($location/hagrids_hut/Hagrid ${hc}/headmasters_office/Dumbledore ${hc}/classrooms/Potions/Snape \
 ${hc}/classrooms/Charms/Flitwick ${hc}/classrooms/DADA/Quirrell \
 ${hc}/classrooms/Transfiguration/McGonagall ${hc}/gryffindor_tower/Harry ${hc}/great_hall/Malfoy \
