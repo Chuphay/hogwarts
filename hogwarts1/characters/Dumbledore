@@ -37,7 +37,7 @@ then
     if [ $join = "yes" ]
     then
         sudo /usr/local/bin/.hogwarts/power_up.sh $user 2 
-        # Welcome
+        echo -e "Don't forget, if you want to come back, type \e[95mssh $user@hogwarts.tech\e[0m to come back"
     else
         echo "very well, come back when you are ready"
     fi
