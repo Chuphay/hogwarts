@@ -2,7 +2,7 @@ Welcome. This is Gryffindor_tower.
 
 You will notice that the dorms exist here.
 
-You even have a drom room, that is all yours (no sharing dorms here)
+You even have a dorm room, that is all yours (no sharing dorms here).
 
 To get to your dorm room, try to \e[96mcd\e[0m into it. 
 

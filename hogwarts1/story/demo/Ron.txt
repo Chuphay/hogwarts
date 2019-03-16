@@ -1,11 +1,13 @@
-Did you know you can type \033[96mcd\033[0m to change your location?
+Hey! I'm Ron. See you got your wand there -- I can help get you started if you'd like. I was raised with this stuff
 
-For example, if you want to go to gryffindor_tower, you should type 
+For example, did you know you can type \033[96mcd\033[0m to change your location?
+
+Like, if you want to go to gryffindor_tower, you should type 
 
 $ \033[95mcd gryffindor_tower\033[0m
 
-There you will find Harry, you should talk to him
+(But \033[31mdon't\033[0m type the \033[96m$\033[0m, that represents the command prompt)
 
-(\033[31mDon't\033[0m type the \033[96m$\033[0m, that represents the command prompt)
+There you will find Harry, you should talk to him. He's new to all this magic stuff just like you
 
-Also, you should be compulsively typing \e[95mls\e[0m everywhere you go
+Also, you should be compulsively typing \e[95mls\e[0m everywhere you go. The magic world is a dangerous place to be wandering around in the dark

@@ -1,5 +1,3 @@
-Did you see the story in the paper? Let me read it to you:
+Hey, you made it back! I'm glad to see you've enrolled -- there's so much to learn!
 
-GRINGOTTS BREAK-IN LATEST
-
-Investigations continue into the break-in at Gringotts on 31 July, widely believed to be the work of Dark wizards or witches unknown. Gringotts goblins today insisted that nothing had been taken. The vault that was searched had in fact been emptied the same day. "But we're not telling you what was in there, so keep your noses out if you know what's good for you," said a Gringotts spokesgoblin this afternoon.
+The first thing I did was \e[96mcd\e[0m and \e[96mls\e[0m my way into every nook and cranny I could. And there's even a hut outside of the castle as well! So much ground to cover . . .
