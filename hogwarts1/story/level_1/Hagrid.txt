@@ -1,20 +1,15 @@
-Hello there mate
-
-I gotta visit Gringotts. Wizards' bank. Run by goblins. Have a sausage, they're not bad cold 
-Yeah -- so yeh'd be mad ter try an' rob it, I'll tell yeh that. Never mess with goblins. Gringotts is the safest place in the world fer anything yeh want ter keep safe -- 'cept maybe Hogwarts. As a matter o' fact, I gotta visit Gringotts anyway. Fer Dumbledore. Hogwarts business. He usually gets me ter do important stuff fer him. Fetchin' you, gettin' things from Gringotts -- knows he can trust me, see.
-
-How are you liking Hogwarts so far?
+Hello there, mate. How are you liking Hogwarts so far?
 
 Told you would like it.
 
-Did I ever tell you, I use to have a wand? I miss it so much.
-
-Did you know that your wand can take you immediately back to your dorm room?
-
-I know my hut is far away from your dorm. You can use \e[96mcd ~\e[0m to get quickly back to your dorm. 
+Did you know that your wand can take you immediately back to your dorm room? I know my hut is a far hike. You can use \e[96mcd ~\e[0m to get quickly back to your dorm. 
 
 Try:
 
 $ \e[95mcd ~\e[0m
 
-I'm off to Gringotts now, I'll see you later.
+Ah, I miss me wand so much.
+
+I gotta visit Gringotts fer Dumbledore. Hogwarts business. Yeh'd be mad ter try an' rob it, I'll tell yeh that. Gringotts is the safest place in the world fer anything yeh want ter keep safe.  Never mess with goblins or their banks. He usually gets me ter do important stuff fer him. Fetchin' you, gettin' things from Gringotts -- knows he can trust me, see.
+
+I'll see yeh later.

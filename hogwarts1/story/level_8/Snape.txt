@@ -6,7 +6,9 @@ with your first cauldron \e[96mnano\e[0m
 This week, you will attempt to modify
 the potion, to create your own.
 This is your \e[31mhomework\e[0m!
-I doubt you will be able to finish
+I doubt you will be able to finish.
+Some people just shouldn't be allowed
+to have magic.
 
 As you may be aware
 you can only modify things in

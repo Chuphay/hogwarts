@@ -1,1 +1,5 @@
-story level 2
+Wait, people duel using magic?! And there aren't any laws controlling wand possession?
+
+Great, I'm going to die. Wonderful.
+
+I haven't even figured out how to \e[95mcd\e[0m out of this room yet! I'm toast!

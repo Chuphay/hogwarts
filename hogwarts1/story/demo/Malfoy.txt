@@ -1,15 +1,13 @@
 My name's Malfoy, Draco Malfoy.
 
-Are you a pure blood?
+You're new here... I can tell. Are you a pure blood?
 
 I really don't think they should let the other sort in, do you? They're just not the same, they've never been brought up to know our ways. Some of them have never even heard of Hogwarts until they get the letter, imagine. I think they should keep it in the old wizarding families.
 
-You're new here... I can tell
+Wait, you don't know?
 
-Probably a mudblood
-
-I've got a new hex to try out on you
+Probably a mudblood. I've got a new hex to try out on you
 
 \e[31mAbracadabra turn this student yellow\e[0m
 
-drat ... it didn't work
+Drat ... it didn't work

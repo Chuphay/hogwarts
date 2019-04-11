@@ -1,1 +1,7 @@
-story level 5
+Did you talk to Professor McGonagall?
+
+I waited outside her office until she came back from break, and she said there's still more to learn with \e[96mls -l\e[0m. More. As if it didn't take me all of break just to get a handle on the last lesson.
+
+Do you think we're going to have a test? McGonagall said we wouldn't have one for a while but maybe *that's* the test and ... Wait, what am I doing?
+
+I need to study! Leave me alone!

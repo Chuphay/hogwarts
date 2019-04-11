@@ -1,1 +1,5 @@
-story goes here
+Woah, hey. It looks like you're getting the hang of \e[96mcd\e[0ming!
+
+It starts as just wandering around, but it's so cool how abstract and powerful magic becomes with just a bit of practice. Too powerful, almost. No wonder there was that war on how to use it back in the dark ages ...
+
+... hmm? Oh, don't even worry about it. See you in class!

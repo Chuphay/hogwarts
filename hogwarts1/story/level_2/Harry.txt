@@ -1,5 +1,7 @@
-Hagrid had emptied vault seven hundred and thirteen, if you could call it emptying, taking out that grubby little package. Had that been what the thieves were looking for? 
+Oh. Hey. You're here.
 
-I think that none of the lessons I've had so far had given me as much to think about as tea with Hagrid. 
+Sorry, I'm a bit frazzled right now. Right when I feel like I may understand a spell, we just keep learning more. Will it ever end? 
 
-Had Hagrid collected that package just in time? Where was it now? And did Hagrid know something about Snape that he doesn't want to tell us?  
+If you ever need a break, just \e[95mexit\e[0m. Seriously, get out. Save yourself and come back when you feel up to it.
+
+In the meantime, I'll just keep stress studying. That has to help, right? ... Right?
