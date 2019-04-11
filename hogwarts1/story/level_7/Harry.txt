@@ -1,1 +1,7 @@
-story level 6
+Okay, okay, it's \e[95md | rwx | rwx | r-x\e[0m. \e[95md | rwx | rwx | r-x\e[0m.
+
+\e[96md\e[0m is the directory. And \e[96m-\e[0m a file. 
+
+Then it's all about the sheilds. "User", "group", "other." U.G.O. like Yugio! No, that's nonsense. Bad, Harry.
+
+Oh, what are you doing here? Wait ... what day is it?

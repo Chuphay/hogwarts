@@ -1,9 +1,11 @@
 How ya doin?
 
-Wands are awesome! But sometimes it feels like you need to do a lot of spell casting to get anything done. Luckily, there's a way to make your spell casting faster, by using the \e[96m<tab>\e[0m key in the upper left corner of your keyboard. \e[96m<tab>\e[0m completion workd=s by letting your wand guess what you are trying to cast. For example instead of invoking my full name, when trying to talk with me, try doing this instead:
+Wands are awesome! But sometimes it feels like you need to do a lot of spell casting to get anything done. Luckily, there's a way to make your spell casting faster, by using the \e[96m<tab>\e[0m key in the upper left corner of your keyboard. \e[96m<tab>\e[0m completion works by letting your wand guess what you are trying to cast. For example instead of invoking my full name, when trying to talk with me, try doing this instead:
 
 $ \e[95mHa\e[0m \e[96m<tab>\e[0m
 
 Did that work for you? Try practicing it when you move around too:
 
 $ \e[95m cd ho\e[0m \e[96m<tab>\e[0m
+
+I do this all the time when I go take care of my sweet puppy, Fluffy, on the second fl--. Ahem, I mean, on the second day of every week. Yes. That's a normal way to say that.

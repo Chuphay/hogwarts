@@ -1,7 +1,3 @@
-Merry Christmas!
+Happy holidays!
 
-Just kidding
-
-\e[31mAbracadabra turn this student yellow\e[0m
-
-drat ... it didn't work
+Just kidding, I bet you didn't even get any presents in your dorm. So sad.
