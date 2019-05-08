@@ -1,7 +1,7 @@
 #!/bin/bash
 user=`whoami`
 character=$0
-#jjecho $character
+#echo $character
 the_character="${character##*/}"
 
 #sudo /usr/local/bin/.hogwarts/user_info.sh $user

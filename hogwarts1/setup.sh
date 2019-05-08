@@ -5,10 +5,10 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-export location="/hogwarts"
+export location="/HT/hogwarts"
 export directory=`pwd`
 
-delete_everything="false"
+delete_everything=1 #"false"
 
 if [[ $delete_everything == 1 ]]; then
   echo "Deleting everything"

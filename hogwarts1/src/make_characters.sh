@@ -17,7 +17,7 @@ chmod u+s /usr/local/bin/hogwarts/empty
 # cp $directory/src/empty /usr/local/bin/hogwarts/
 
 cp $directory/characters/Welcome /usr/local/bin/hogwarts/Welcome
-# cp $directory/characters/Dumbledore /usr/local/bin/hogwarts/Dumbledore
+cp $directory/characters/Merlin /usr/local/bin/hogwarts/Merlin
 cat $directory/characters/Dumbledore | envsubst '${location}' > /usr/local/bin/hogwarts/Dumbledore
 chmod 755 /usr/local/bin/hogwarts/Dumbledore
 
@@ -38,7 +38,8 @@ hc="$location/castle"
 dirs=($location/hagrids_hut/Hagrid ${hc}/headmasters_office/Dumbledore ${hc}/classrooms/Potions/Snape \
 ${hc}/classrooms/Charms/Flitwick ${hc}/classrooms/DADA/Quirrell \
 ${hc}/classrooms/Transfiguration/McGonagall ${hc}/gryffindor_tower/Harry ${hc}/great_hall/Malfoy \
-${hc}/Ron ${hc}/library/Hermione ${hc}/second_floor/room1/mirror_of_erised ${hc}/second_floor/room2/Fluffy)
+${hc}/Ron ${hc}/library/Hermione ${hc}/second_floor/room1/mirror_of_erised ${hc}/second_floor/room2/Fluffy \
+HT/Merlin)
 
 for dir in "${dirs[@]}"
 do
