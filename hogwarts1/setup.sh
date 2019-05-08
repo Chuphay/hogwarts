@@ -8,7 +8,7 @@ fi
 export location="/HT/hogwarts"
 export directory=`pwd`
 
-delete_everything=1 #"false"
+delete_everything="false"
 
 if [[ $delete_everything == 1 ]]; then
   echo "Deleting everything"
