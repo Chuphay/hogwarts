@@ -8,4 +8,3 @@ sudo docker run --restart=unless-stopped -p 80:80 -d friendlyhello
 
 Katrina was here
  
-Dave was here
