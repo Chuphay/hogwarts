@@ -1,3 +1,10 @@
 #!/bin/bash
 
-echo -e ""
+echo -e "\e[31mWoah-ho-ho!\e[0m
+\e[33mHello there, young mageling.\e[0m
+\e[32mAren't you a little explorer?\e[0m
+\e[92mYou're about to hit the root to Hogwarts Tech.\e[0m
+\e[34mFeel free to go further and take a look around.\e[0m
+\e[36mRoots may not make sense now, but you'll learn more about them in the future.\e[0m
+\e[35mBut only if you keep taking those classes!\e[0m
+"
