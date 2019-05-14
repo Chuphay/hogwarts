@@ -1,7 +1,4 @@
 #!/usr/bin/perl
-# use strict;
-
-# exit(0)
 
 my $mem_size = 0;
 my $file_offset = 0;
@@ -124,7 +121,6 @@ my %nameexception = (
 &resolve_external_references();
 &list_extra_externals();
 
-# exit(0);
 
 sub linux_objects
 {

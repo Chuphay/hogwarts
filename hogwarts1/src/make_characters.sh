@@ -39,7 +39,7 @@ dirs=($location/hagrids_hut/Hagrid ${hc}/headmasters_office/Dumbledore ${hc}/cla
 ${hc}/classrooms/Charms/Flitwick ${hc}/classrooms/DADA/Quirrell \
 ${hc}/classrooms/Transfiguration/McGonagall ${hc}/gryffindor_tower/Harry ${hc}/great_hall/Malfoy \
 ${hc}/Ron ${hc}/library/Hermione ${hc}/second_floor/room1/mirror_of_erised ${hc}/second_floor/room2/Fluffy \
-/HT/Merlin)
+/Merlin)
 
 for dir in "${dirs[@]}"
 do

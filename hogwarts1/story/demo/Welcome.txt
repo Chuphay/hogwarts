@@ -26,7 +26,7 @@ I have a few pointers to help you on your journey:
 
 First of all, a congratulations! You made it to Hogwarts. Probably the hardest part of your journey is over. Most people can't even find a wand...
 
-Second, have fun! Explore, experiment, and talk to whomever you meet. 
+Second, have fun! Explore, experiment, and talk to whomever you meet by typing their name (don't forget, magic is case-sensitive). 
 
 Third, don't forget the spells you have already learned. A great idea is to write them down in a notebook. Up to now, you have learned two spells:
 
@@ -36,4 +36,4 @@ Third, don't forget the spells you have already learned. A great idea is to writ
 
 Finally, try not to use your mouse. It may be uncomfortable at first, but as you practice using your wand, you will gain speed and technique.
 
-Try talking to Ron by typing \e[95mRon\e[0m with your wand. Have fun! 
+Try illuminating your surroundings and then talking to Ron by typing \e[95mRon\e[0m with your wand. Have fun! 

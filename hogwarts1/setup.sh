@@ -5,7 +5,7 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-export location="/HT/hogwarts"
+export location="/hogwarts"
 export directory=`pwd`
 
 delete_everything="false"

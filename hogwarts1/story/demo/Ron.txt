@@ -10,4 +10,4 @@ $ \033[95mcd gryffindor_tower\033[0m
 
 There you'll find Harry, you should talk to him. He's new to all this magic stuff just like you
 
-Also, you should be compulsively typing \e[95mls\e[0m everywhere you go. The magic world is a dangerous place to be wandering around in the dark
+Also, you should be \e[7mcompulsively typing\e[0m \e[95mls\e[0m everywhere you go. The magic world is a dangerous place to be wandering around in the dark
