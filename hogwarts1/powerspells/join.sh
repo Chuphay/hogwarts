@@ -30,6 +30,7 @@ do
         #touch /magical_world/hogwarts/dorms/$uservar/.bashrc
         echo 'PATH=$PATH:/usr/local/bin/hogwarts' >> $location/castle/gryffindor_tower/dorms/$uservar/.bashrc
         echo 'alias whereami=pwd' >> $location/castle/gryffindor_tower/dorms/$uservar/.bashrc
+        echo 'alias yes=""' >> $location/castle/gryffindor_tower/dorms/$uservar/.bashrc
         echo 'umask 002' >> $location/castle/gryffindor_tower/dorms/$uservar/.bashrc
         echo 'LS_COLORS="*.sh=4;31:ex=4;35:su=4;93"' >> $location/castle/gryffindor_tower/dorms/$uservar/.bashrc
 	    echo "export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\$(pwd)\[\033[00m\]\$ '" >> $location/castle/gryffindor_tower/dorms/$uservar/.bashrc

@@ -28,7 +28,7 @@ function err_handle {
 
 
     if [[ $status -eq 127 ]]; then
-        echo -e ". . . nothing happened. Maybe check your pronounciation?"
+        echo -e ". . . nothing happened. Maybe check your pronunciation?"
     fi
 
 }
