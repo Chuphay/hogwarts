@@ -20,9 +20,7 @@
 \e[0m
 Welcome to the first year of your program at Hogwarts School of Wizardry!
 
-I am Professor Dumbledore, and I will be guiding you through your stay at Hogwarts. After finishing this year, you will know enough magic that you will be competent enough with your wand to perform most every-day spells.
-
-This year is broken up into a fall semester and a spring semester, each of which have four months (or days depending on your speed). After you have learned all the lessons for a particular month, you should come and \e[95mvisit me\e[0m, so that I can check your progress and move you along to the next month.
+I am Professor Dumbledore, and I will be guiding you through your stay at Hogwarts. 
 
 You are now in your dorm room. It is located in Gryffindor Tower. To get to the main part of the castle, you will have to leave your room, then leave the dorms, then leave Gryffindor Tower.
 
@@ -35,5 +33,7 @@ A couple notes to remember.
 \e[96mcd ..\e[0m is used to exit a room
 
 Explore, experiment, and talk to whomever you meet. But please do \e[31mnot\e[0m use your mouse. It may be uncomfortable at first, but eventually you will pick up speed using your wand.
+
+After you have learned all the lessons from your professors, you should come and \e[95mvisit me\e[0m, so that I can check your progress and move you along to the next month.
 
 Also, you should be warned, the second floor is forbidden.  
