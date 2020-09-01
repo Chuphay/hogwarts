@@ -18,4 +18,11 @@ cd hogwarts1
 sudo setup.sh
 ```
 
+One may want to notice that in setup.sh, on line 11
+
+```
+delete_everything="false"
+```
+
+This can be set differently for a clean install.
  

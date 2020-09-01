@@ -6,7 +6,9 @@ Obviously the terminal is your wand and the wand is the tool you use to cast spe
 
 Spell Casting Area: The spell casting area is just blank space. Any blank space after the prompt is where the letters you type will be displayed. It’s in this blank space that you will be casting your spells.
 
-Read instructions carefully... remember it's laviosa not laviosa. if you mess up an invocation it isn't going to work, double check your spelling (pronounciation). Magic is one of those things where you really need to be exact, mis-pronouncing a spell usually will end up with nothing happening. So pay attention!
+Read instructions carefully. If you mess up an invocation it isn't going to work, double check your spelling (pronounciation). Magic is one of those things where you really need to be exact, mis-pronouncing a spell usually will end up with nothing happening. So pay attention!
+
+Swish and flick, remember, swish and flick. And saying the magic words properly is very important, too -- never forget Wizard Baruffio, who said 's' instead of 'f' and found himself on the floor with a buffalo on his chest.
 
 Almost all spells follow the same recipe. The name of the spell followed by the target of the spell (and as you get more advanced, we will learn how to add additional options to the spell):
 
